@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .login {
+      max-width: 350px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+   
+  </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-center mb-4">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174881.png" alt="Icon" style="width: 60px; height: 60px;">
+          </div>
+          <div class="col-md-12">
+            <form class="login">
+              <div class="form-group">
+                <label for="usernameEmail" class="small">Username or Email Address</label>
+                <input type="text" class="form-control" id="usernameEmail" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="password" class="small">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="">
+              </div>
+             
+                <div class="form-group row">
+                    <div class="col-6">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label small" for="rememberMe">Remember Me</label>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <button type="submit" class="btn btn-primary btn-block" style="width: 100px; margin-left: 20px;">Log In</button>
+                    </div>
+                  </div>
+                
+            </form>
+          </div>
+          <div class="col-md-12 text-center mt-3 ">
+            <p class="small" style="margin-right: 150px;">Lost your password?</p>
+            <p class="small"  style="margin-right: 150px;">← Go to smart cleaning</p>
+          </div>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>

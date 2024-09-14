@@ -9,12 +9,11 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $subject = $_POST["subject"];
-    $message = $_POST["message"];
+    $username = $_POST["usernameEmail"];
+    $password = $_POST["password"];
+    
 
-    $sql = "INSERT INTO clean(name, email, subject, message) VALUES ('$name', '$email', '$subject', '$message')";
+    $sql = "INSERT INTO clean(username,password) VALUES ('$usernameEmail', '$password')";
     
     if ($conn->query($sql) === TRUE) {
        

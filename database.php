@@ -9,7 +9,7 @@ if(!$conn){
     die("Connection failed:".mysqli_connect_errno());
 }
 
-$sql  ="CREATE DATABASE  Student";
+$sql  ="CREATE DATABASE  kanvan";
 
 if(mysqli_query($conn,$sql)){
     echo "create database successfully";

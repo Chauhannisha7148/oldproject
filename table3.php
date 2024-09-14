@@ -11,12 +11,11 @@
     }
 
 
-    $sql = "CREATE TABLE clean(
-    name VARCHAR (30) NOT NULL,
-    email VARCHAR (50),
-    subject VARCHAR (30),
-    message VARCHAR (50)
+    $sql = "CREATE TABLE user(
+    usernameEmail VARCHAR (30) NOT NULL,
+    password VARCHAR (50) NOT NULL
    )";
+
     if(mysqli_query($conn,$sql)){
         echo "Table Create Suceefully..";
     }else{
