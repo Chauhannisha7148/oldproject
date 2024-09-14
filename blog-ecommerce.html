@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .background-banner {
+        background-image: url('./img/banner0.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: #fff;
+      }
+      .dropdown-submenu {
+        position: relative;
+      }
+      
+      .dropdown-submenu > .dropdown-menu {
+        left: 100%;
+        /* -6px gives dropdown-menu's padding+border */
+        top: -6px;
+      }
+      
+      .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+        /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+        display: block;
+      }
+      
+    .background-banner {
+        background-image: url('./img/background-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: #fff; 
+      }
+      .background-banner img{
+        position: absolute;
+      }
+      .container1 {
+        position: relative;
+        color: white;
+      }
+      
+      
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="home2.html"><img src="./img/zeksta-dark.svg"style="height:60px"> </a>
+            
+        </div>
+        <div class="col-md-8">
+            
+            <nav class="navbar navbar-expand-sm ">
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a>
+               -->
+                <!-- Links -->
+                <ul class="navbar-nav text-dark">
+                  
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: large;">
+                      Who we are
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-dark" href="about.html" style="font-size: large;">About Us</a>
+                      <a class="dropdown-item text-dark" href="join-us.html" style="font-size: large;">Join Us</a>
+                      
+                    </div>
+                  </li>
+                  
+                  <!-- Dropdown -->
+                  <div class="dropdown open mt-2 text-dark text-center">
+                    <a class=" dropdown-toggle text-dark" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="font-size: large;">
+                      what we do
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+                      <li class="dropdown-submenu text-dark">
+                        <a  class="text-dark" href="overview.html"style="font-size: large;padding:20px">Overview</a>
+                        
+                      </li>
+                      <li class="dropdown-submenu ">
+                        <a  class="text-dark "  href="#"style="font-size: large;padding:20px">Services</a>
+                        <ul class="dropdown-menu" style="font-size: large;padding:30px">
+                          <li><a  class="text-dark  "   href="Blockchain.html">Blockchain Development</a></li>
+                          <li><a  class="text-dark "   href="chatbot.html">Chatbot</a></li>
+                          <li><a  class="text-dark "  href="Artificial-Intelligence.html">Artificial Intelligence</a></li>
+                          <li><a  class="text-dark"   href="Internet_of_things.html">Internet of Things(IoT)</a></li>
+
+                          <li><a  class="text-dark"   href="website_development.html">Website Development</a></li>
+                          <li><a   class="text-dark"  href="mobile_application_development.html">Mobile Application Development</a></li>
+                          <li><a   class="text-dark"  href="Digital_strategy.html">Digital Strategy</a></li>
+                          <li><a    class="text-dark" href="web_design.html">Web Design</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Industries</a>
+                        <ul class="dropdown-menu " style="font-size: large;padding:30px">
+                          <li><a  class="text-dark"   href="Health_care.html">Health Care</a></li>
+                          <li><a  class="text-dark"   href="Education_E-learning.html">Education & E-Learning</E-Learning></a></li>
+                          <li><a   class="text-dark"  href="Logistics and Transportation.html">Logistics and Transportion</a></li>
+                          <li><a   class="text-dark"  href="Retails _E-commerce.html">Retails & E-Learning</a></li>
+                          <li><a   class="text-dark"  href="Business .html">Business & Finance</a></li>
+                          <li><a  class="text-dark"   href="Media_Entertainment.html">Media & Entertainment</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Approaches</a>
+                        <ul class="dropdown-menu"style="font-size:large;padding:20px">
+                          <li><a  class="text-dark"   href="approach-delivery.html">Delivery Model</a></li>
+                          <li><a  class="text-dark"   href="approach-development.html">Development Mrthodology</a></li>
+                          <li><a  class="text-dark"   href="approach-engagement.html">Engagement Models</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="hire.html"style="font-size: large;">Hire developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="blog.html"style="font-size: large;">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="teach-we.html"style="font-size: large;">Tech we Love</a>
+                  </li>
+                  <li>
+                    <a href="let.html" class="btn  ml-3 " style="color:black; border: 1px solid gray;  ">Let's Talk</a>
+                  
+                  </li>
+                    
+                </ul>
+              </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>We craft your innovative thought in the digital world</p>
+        </div>
+    </div>
+</div>
+   <!--second container-->
+    <div class="container-fluid background-banner">
+        <div class="row">
+            <div class="col-md-12 mt-5 " >
+                <h3 class=" ml-5 " style="margin-top: 0px;">A Detailed Guide on Cost of Ecommerce App Development.</h3>
+                <h6 class="ml-5">Oct 28, 2021</h6>
+               
+                    <a href="#" class="btn btn-primary ml-5 mt-3" style="background-color: black; border: transparent; margin-top: 20px; height: 42px; width:100px;">Let's Talk</a>
+                 <h3 class=" ml-5  mt-5" style="margin-top: 0px;">Ideating + Creating + Shipping</h3>
+            </div>
+            
+        </div>
+    </div>
+<!--third container-->    
+<div class="container mt-5">
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <p>If you think a mobile app is a must-have for your eCommerce store, you’re not alone. Many shop owners are of the same opinion because of the fact that E-commerce apps are on the rise. Ecommerce giants like Amazon, eBay, Shopify are dominating the world of eCommerce with their mobile apps. As a result,
+                <br><br>
+                Thousands of startups have created their own ecommerce mobile app in order to generate new revenue streams for their business
+                If you want to transform your physical store into an ecommerce platform, then a mobile app will undoubtedly put your business on the right track.
+                <br><br>
+                Benefits of an E-commerce mobile app
+                According to studies, 9 out of 10 customers carry their smartphones with them at all times. People nowadays are more likely to make purchases on their phones than on their computers. This shows the significance of mobile apps in boosting sales. </p>
+
+                <img src="./img/Benefits-of-ECommerce-Mobile-Apps.png"width="100%" height="500px">
+                <p>Here are a few benefits of owning a mobile app for your store. </p>
+
+                <h5>1. Better user experience</h5>
+                <p>Mobile apps reload faster compared to websites giving your customers a better user experience. </p>
+                <h5>2. Accessibility</h5>
+                <p>Accessing an ecommerce store through mobile apps is a lot easier as it takes just a few taps on your smartphone to purchase a product. </p>
+                <h5>3. Customer attraction</h5>
+                <p>40% of customers prefer to make purchases if the experience appears to be mobile-friendly.</p>
+                <h5>4. Smartphone hardware</h5>
+                <p>Apps can access smartphone hardware such as cameras, geolocation, and so on, allowing users to have a more personalized and efficient shopping experience.</p>
+                <h5>5. Push notifications</h5>
+                <p>Apps act as a marketing tool allowing customers to receive personal discounts, promo codes, offers, etc.</p>
+                <h5>6. App analytics</h5>
+                <p>You can collect data through apps and analyzing them, to understand consumer behavior which helps you to target the right audience.
+                    <br><br>
+                    At this point, you must be wondering “how much does it cost to develop an e-commerce mobile app?”
+                    <br><br>
+                    There is no one-size-fits-all answer to this question.
+                    <br><br>
+                    A simple app can cost anywhere between $38,000 to $91,000 to develop. A basic app will cost you around $30,000, while medium complexity apps will cost you between $50,000 and $75,000, and complex apps will cost you more than $75,000.
+                    <br><br>
+                    While this is a rough estimate, there are several factors that influence the app’s development cost.</p>
+                <h5>Factors that influence Ecommerce app development cost</h5>
+                <img src="./img/ecommerce-mobile-app.jpg" width="100%" height="500px">
+                <h5>1. Platform</h5>
+                <p>The cost of developing an app will vary depending on the app development framework you choose. Android and iOS are the most popular platforms in today’s market. You can choose whether your app will run on Android or iOS, or you can opt for cross-platform app development to build an app that will work on both platforms.</p>
+                <h5>2. Geographical location</h5>
+                <p>In general, app development costs between $100 and $200 per hour in countries like the United States, Canada, and Australia. In Asian and Eastern European countries, the price is lower. In India, for example, app development costs between $15 and $30 per hour. This is one of the reasons why businesses all over the world prefer to outsource their app development projects to India.</p>
+                <h5>3. App design </h5>
+                <p>App design is one factor that is taken into account when working on the visual aesthetics of an e-commerce application. The app design comprises several sections like logo design, screen design, icon design, etc . which influence the cost of app development.</p>
+                <h5>4. App features</h5>
+                <p>The features are what defines the app. A cost-effective app can have basic features such as User login/registration, Payment gateway, Order and tracking, Checkout, etc. but if you want your app to stand out from the crowd, you may want to include some advanced features like Social media integration, Push notification, In-app chat, Product search and filter, Product reviews, etc which will raise the cost of development.</p>
+                <h5>5. App maintenance</h5>
+                <p>This is one of the invisible and unavoidable factors that determine the cost of e-commerce app development. The platforms like Android or IOS undergo system updates frequently. In order for an app to operate seamlessly, it is important to update it regularly. Updating and maintenance can increase the cost of app development.
+                    <br><br>
+                    The majority of app development companies use the agile approach for app development. The entire app development process is divided into short sprints in agile. Each sprint has a predetermined cost. This means you won’t have to pay a large sum for the entire app at once.</p>
+                <h5>Now Let’s look at the cost involved in the agile app development process</h5>
+                <img src="./img/agile-mobile-app-development.jpg"width="100%" height="500px">
+                <h5>1. Wireframe cost</h5>
+                <p>The wireframe is like a blueprint of your mobile app. A wireframe depicts the detailed layout of app screens and arrangements, as well as other visual elements such as buttons and icons.
+                    <br><br>
+                    Usually, the app developers create multiple wireframes and the cost is calculated depending on the number of screens and the complexity of each screen. As you may be aware, developers charge on an hourly basis. So wireframe costs for apps with 2-3 screens can go up to $500, and costs for apps with more screens can range between $1500 to $2500.</p>
+                <h5>2. UI/UX design cost</h5>
+                <p>The next step in the app development process is the UI and UX design.
+                    <br><br>
+                    The UI design is responsible for visual details such as buttons, fonts, animations, and so on. The goal of UX design is to provide the best possible user experience by considering workflows, interactions, and other factors. The average cost of UI/UX design starts from $2000 to $2500. It may go up to $30,000 for high complexity applications.</p>
+                <h5>3. Development cost</h5>
+                <p>This stage is the coding part of the process. Skilled developers are assigned depending on the client’s requirement. The cost of development is determined by the total number of developers. Depending on the advanced feature integrations and complexity of the app, the development cost can go up to $80000.</p>
+                <h5>4. Testing & Deployment cost</h5>
+                <p>Testing is an important part of the app development process. Testing ensures that your app is functional and free of bugs. An app with advanced features aimed at a large target audience would require more thorough testing. The average cost of testing and deployment is $1000 to $20000.
+                    <br><br>
+                    And then there are also additional costs that must be considered.
+                    <br><br>
+                    There is a fee for launching your app on the app store. Google charges a $25 one-time registration fee, while Apple charges $99 for a one-year membership. Apart from these, there is a service cost for in-app payments.
+                    <br><br>
+                    The hosting cost varies from $20 to $1000 per month, depending on the domain you choose and the services you use. The cost of integrating a payment gateway depends on the service provider.Domain/SSL/Email services cost an additional $30 per year.</p>
+                <h5>Final thoughts</h5>
+                <p>From the above cost estimation, we can say that on average, the total cost of eCommerce app development ranges between $30,000 to $200,000. But this cost depends on app complexity, features, and the factors discussed above. If you are looking for ways to improve your business, you should definitely consider developing a mobile application for your eCommerce store. 
+                    <br><br>
+                    Zeksta technology is a global leader in eCommerce app development. We have successfully developed apps for businesses by implementing a cost-effective strategy.  
+                    <br><br>
+                    Feel free to contact us for your next  ecommerce app development project</p>
+                <h5></h5>
+                <p></p>
+                <h5></h5>
+                <p></p>
+        </div>
+    </div>
+</div>    
+
+<!--footer part-->
+ <div class="container-fluid mt-5 " style="background-color: rgb(5, 2, 18);">
+    <div class="row">
+        <div class="col-md-6  mt-4 text-white">
+            <img src="https://www.zeksta.com/zeksta-dark.svg"style="height:70px;background-color:white;"> <br>
+            <p class="mt-4">From brainstorming brilliant ideas to flawless launches, Zeksta Technology seamlessly handles your website and app development, empowering you to conquer the digital world.</p>
+            <br>
+            <h6>Follow us on :</h6>
+            <div class="col-md-5 mt-5">
+                
+                <p>
+                <i class="fab fa-facebook-f icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-twitter icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-youtube icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-instagram icon"style="font-size: 30px;"></i>
+            
+                </p>
+            </div>
+
+        </div>
+        <div class="col-md-6 mt-4">    
+            <div class="row">
+                <div class="col-md-2.5">
+                    <a href="#" style="color: white;">Who we are &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">What we do &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Hire developers &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Tech we Love &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+        </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Skype ID </h6>
+                    <p>Live:zekstatech</p>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Email Us </h6>
+                    <p>solution@zeksta.com</p>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Call Us </h6>
+                    <p>+1(214)4734395  +919620390226</p>
+                </div>
+            </div>
+            <h4 class="text-white">Location</h4><br>
+            <div class="row">
+                <div class="col-md-5 text-white">
+                    <h6 style="color:white;">INDIA </h6>
+                    <p>Zeksta Technology Pvt. Ltd. 982, 4th Floor, Marvi Arcade, BTM 4th Stage, Vijaya Bank Layout, Bengaluru, Karnataka-560076</p>
+                </div>
+                <div class="col-md-5 text-white">
+                    <h6 style="color:white;">USA </h6>
+                <p>Zeksta Technology Pvt Ltd 539 W. Commerce St #3504 Dallas, TX 75208</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid" style="background-color: black;">
+    <div class="row">
+        <div class="col-md-9 text-white ">
+            <p>2017 - 2024 © All rights reserved.Zeksta Technology Pvt. Ltd.</p>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-6 text-white text-center"">
+                   <p>Sitemap &nbsp;|</p> 
+                </div>
+                <div class="col-md-6 text-white text-center""> 
+                  <p> Privacy Policy</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>                
+

@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    .background-banner {
+      background-image: url('./img/banner0.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: #fff;
+    }
+    .dropdown-submenu {
+      position: relative;
+    }
+    
+    .dropdown-submenu > .dropdown-menu {
+      left: 100%;
+      /* -6px gives dropdown-menu's padding+border */
+      top: -6px;
+    }
+    
+    .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+      /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+      display: block;
+    }
+    
+    /* Custom styles for banner */
+    .banner {
+        background: linear-gradient(135deg, #e25544 2.88%, #42127e 98.14%);
+      background-size: cover;
+      color: white;
+      padding: 100px 0; /* Adjust padding as needed */
+      text-align: center;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="home2.html"><img src="./img/zeksta-dark.svg"style="height:60px"> </a>
+            
+        </div>
+        <div class="col-md-8">
+            
+            <nav class="navbar navbar-expand-sm ">
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a>
+               -->
+                <!-- Links -->
+                <ul class="navbar-nav text-dark">
+                  
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: large;">
+                      Who we are
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-dark" href="about.html" style="font-size: large;">About Us</a>
+                      <a class="dropdown-item text-dark" href="join-us.html" style="font-size: large;">Join Us</a>
+                      
+                    </div>
+                  </li>
+                  
+                  <!-- Dropdown -->
+                  <div class="dropdown open mt-2 text-dark text-center">
+                    <a class=" dropdown-toggle text-dark" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="font-size: large;">
+                      what we do
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+                      <li class="dropdown-submenu text-dark">
+                        <a  class="text-dark" href="overview.html"style="font-size: large;padding:20px">Overview</a>
+                        
+                      </li>
+                      <li class="dropdown-submenu ">
+                        <a  class="text-dark "  href="#"style="font-size: large;padding:20px">Services</a>
+                        <ul class="dropdown-menu" style="font-size: large;padding:30px">
+                          <li><a  class="text-dark  "   href="Blockchain.html">Blockchain Development</a></li>
+                          <li><a  class="text-dark "   href="chatbot.html">Chatbot</a></li>
+                          <li><a  class="text-dark "  href="Artificial-Intelligence.html">Artificial Intelligence</a></li>
+                          <li><a  class="text-dark"   href="Internet_of_things.html">Internet of Things(IoT)</a></li>
+
+                          <li><a  class="text-dark"   href="website_development.html">Website Development</a></li>
+                          <li><a   class="text-dark"  href="mobile_application_development.html">Mobile Application Development</a></li>
+                          <li><a   class="text-dark"  href="Digital_strategy.html">Digital Strategy</a></li>
+                          <li><a    class="text-dark" href="web_design.html">Web Design</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Industries</a>
+                        <ul class="dropdown-menu " style="font-size: large;padding:30px">
+                          <li><a  class="text-dark"   href="Health_care.html">Health Care</a></li>
+                          <li><a  class="text-dark"   href="Education_E-learning.html">Education & E-Learning</E-Learning></a></li>
+                          <li><a   class="text-dark"  href="Logistics and Transportation.html">Logistics and Transportion</a></li>
+                          <li><a   class="text-dark"  href="Retails _E-commerce.html">Retails & E-Learning</a></li>
+                          <li><a   class="text-dark"  href="Business .html">Business & Finance</a></li>
+                          <li><a  class="text-dark"   href="Media_Entertainment.html">Media & Entertainment</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Approaches</a>
+                        <ul class="dropdown-menu"style="font-size:large;padding:20px">
+                          <li><a  class="text-dark"   href="approach-delivery.html">Delivery Model</a></li>
+                          <li><a  class="text-dark"   href="approach-development.html">Development Mrthodology</a></li>
+                          <li><a  class="text-dark"   href="approach-engagement.html">Engagement Models</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="hire.html"style="font-size: large;">Hire developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="blog.html"style="font-size: large;">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="teach-we.html"style="font-size: large;">Tech we Love</a>
+                  </li>
+                  <li>
+                    <a href="let.html" class="btn  ml-3 " style="color:black; border: 1px solid gray;  ">Let's Talk</a>
+                  
+                  </li>
+                    
+                </ul>
+              </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>We craft your innovative thought in the digital world</p>
+        </div>
+    </div>
+</div>
+<!--secon container-->
+  <div class="container-fluid banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mt-5">
+          <h1 style="text-align: left;">Digital marketing Service</h1>
+          <p style="text-align: left; margin-top: 20px;">
+            Zeksta Technologies provides its clients with the best web development services. We <br>work with in-house experts to address a wide range of client requirements. We have<br> years of experience creating user-friendly and visually appealing websites. Choose us<br> today for rapid website development with enhanced features.
+
+
+          </p>
+          <a href="#" class="btn btn-primary" style="margin-right: 620px; margin-top: 20px; background-color: black; border: transparent; width: 120px;">Let's Talk</a>
+        </div>
+        <div class="col-md-4">
+          <img src="https://www.zeksta.com/_next/static/media/digital-banner.354e1ba1.svg" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" style="margin-top: 100px;">
+        <img src="https://www.zeksta.com/_next/static/media/digital-develop.df5f8278.svg" class="img-fluid" alt="Image">
+      </div>
+      <div class="col-md-8">
+        <h2 style="margin-top: 100px;">Why Digital marketing for your business</h2>
+        <p style="margin-top: 30px;">Digital marketing services helps to Connect with your target audience in the right place and <br>at the right time which is the key to a successful marketing strategy. There is no denying the <br>fact that the number of people who go online every day is increasing rapidly. Consumers <br>today are connected to the internet 24/7 which means you need to meet them where they <br>are spending time. By leveraging digital marketing techniques in your marketing campaigns,<br> you can reach a larger audience in a way that is both cost-effective and measurable.
+
+         <br><br> We are a digital marketing company in India offering cost-effective digital marketing <br>services across the globe. We help your business establish an online presence, drive traffic<br> to your website, convert them into leads and thus increase revenue.</p>
+        <a href="#" class="btn btn-primary mt-3" style="background-color: black; width: 150px; border-radius: 10px; border: transparent;">Let's Talk</a>
+      </div>
+    </div>
+  </div><br><br>
+  <div class="container-fluid " style="background-color: black;">
+    
+    <div class="row">
+      <div class="col-md-12 text-center mt-5">
+        <h1 style="color: white;">Our Expertise</h1>
+      </div>
+    </div><br>
+    <div class="row mt-4 ">
+      <!-- First Column with Card -->
+      <div class="col-md-4 mb-5">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/static/media/digital-exp2.f721c925.svg" class="card-img-top" alt="Website Development" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white; ">
+            <h4 class="card-title text-left" style="color:black; ">Social media marketing</h4>
+            <p class="card-text" style="color: black; padding-top: 20px;">
+              Social Media Marketing is a technique that makes use of  Social Media Platforms to generate a huge a...
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Second Column with Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/static/media/digital-exp6.062d59c4.svg" class="card-img-top" alt="UI/UX" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white;">
+            <h4 class="card-title text-left" style="color:black; ">Email marketing</h4>
+            <p class="card-text" style="color:black; padding-top: 20px;">
+              Email Marketing allows your clients and customers to stay updated about your company, product, or se...
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Third Column with Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/static/media/digital-exp1.2e335570.svg" class="card-img-top" alt="Mobile App Development" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white;">
+            <h4 class="card-title text-left" style="color: black;">Seach engine optimization</h4>
+            <p class="card-text" style="color: black; padding-top: 20px;">
+              Search Engine Optimization is the practice of optimizing a website or webpage in order to increase t...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <!-- Left Column with Heading -->
+      <div class="col-md-5" style="margin-top: 150px;">
+        <h2>Our SEO Process</h2>
+      </div>
+  
+      <!-- Right Column with Two Rows -->
+      <div class="col-md-7" style="margin-top: 100px;">
+        <div class="row">
+          <!-- First Row - First Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/our-seo-process1.d2ab182b.svg" class="card-img-top" alt="Image 1" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title">Competitor analysis</h5>
+                <p class="card-text">Our marketing team conducts in depth analysis of your competitors website. This will help us gauge y..</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- First Row - Second Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/our-seo-process2.f1cd072a.svg" class="card-img-top" alt="Image 2" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title">Keyword Research</h5>
+                <p class="card-text">Keyword research is the most important phase in SEO. Our SEO experts thorough Keyword res...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <!-- Second Row - First Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/our-seo-process3.c2aba91f.svg" class="card-img-top" alt="Image 3" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title">Content building
+                </h5>
+                <p class="card-text">Search engines crawl your website and if they find good content, they will show it on the search eng</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Second Row - Second Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/our-seo-process4.fdf34e00.svg" class="card-img-top" alt="Image 4"style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title">Goal setting</h5>
+                <p class="card-text">At this stage, the goals are set for the SEO plan. One big advantage of SEO over other advertising ...
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- third Row - First Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/our-seo-process5.a99a5354.svg" class="card-img-top" alt="Image 3" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title">Social and link building
+                </h5>
+                <p class="card-text">During this stage of the process, we help clients establish a social media presence and leverage the..</p>
+              </div>
+            </div>
+          </div>
+  
+          <!--third Row - Second Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/our-seo-process6.063201f7.svg" class="card-img-top" alt="Image 4"style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title">Page optimization</h5>
+                <p class="card-text">At this our SEO team works on something called “On page optimization”. Here optimization pe.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-12 text-center">
+        <h2>Tech We Love</h2>
+        <p style="margin-top: 20px;">Discovering and Celebrating the Best in Technology.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center mt-3">
+        <p>
+          <a href="#" class="btn " style="border: 1px solid black; background-color: black; color: aliceblue;">Top</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Web</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Mobile</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Backend</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Design</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Database</a>
+          <a href="#" class="btn " style="border: 1px solid black;">DevOps & Cloud</a>
+          <a href="#" class="btn" style="border: 1px solid black;">QA</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Blockchain</a>
+          <a href="#" class="btn" style="border: 1px solid black;">Salesforce</a>
+        </p>
+      </div>
+    </div>
+    </div><br><br>
+    <div class="container " style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+    border-radius: 20px;
+    box-sizing: border-box;
+"><br>
+      <div class="row mt-5">
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fangular.webp&w=96&q=75" class="card-img-top" alt="Card Image 1" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Freact.webp&w=96&q=75" class="card-img-top" alt="Card Image 2" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fvue.webp&w=96&q=75" class="card-img-top" alt="Card Image 3" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/typescript.svg" class="card-img-top" alt="Card Image 4" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fnextjs.webp&w=48&q=75" class="card-img-top" alt="Card Image 5" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/nuxtjs.svg" class="card-img-top" alt="Card Image 6" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fflutter.webp&w=96&q=75" class="card-img-top" alt="Card Image 7" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/nodejs.svg" class="card-img-top" alt="Card Image 8" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-5">
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/nestjs.svg" class="card-img-top" alt="Card Image 1" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fgraphql.webp&w=96&q=75" class="card-img-top" alt="Card Image 2" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Ffirebase.webp&w=48&q=75" class="card-img-top" alt="Card Image 3" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Flaravel.webp&w=48&q=75" class="card-img-top" alt="Card Image 4" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/codeigniter.svg" class="card-img-top" alt="Card Image 5" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fror.webp&w=48&q=75" class="card-img-top" alt="Card Image 6" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fjava.webp&w=48&q=75" class="card-img-top" alt="Card Image 7" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fpython.webp&w=48&q=75" class="card-img-top" alt="Card Image 8" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-5">
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fgolang.webp&w=96&q=75" class="card-img-top" alt="Card Image 1" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Ffigma.webp&w=96&q=75" class="card-img-top" alt="Card Image 2" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fmy_sql.webp&w=96&q=75" class="card-img-top" alt="Card Image 3" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/mongodb.svg" class="card-img-top" alt="Card Image 4" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/postgres.svg" class="card-img-top" alt="Card Image 5" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fredis.webp&w=96&q=75" class="card-img-top" alt="Card Image 6" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/aws.svg" class="card-img-top" alt="Card Image 7" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fheroku.webp&w=96&q=75" class="card-img-top" alt="Card Image 8" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-5">
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/docker.svg" class="card-img-top" alt="Card Image 1" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fmocha.webp&w=96&q=75" class="card-img-top" alt="Card Image 2" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fchai.webp&w=96&q=75" class="card-img-top" alt="Card Image 3" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fweb3js.webp&w=48&q=75" class="card-img-top" alt="Card Image 4" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fs-cpq.webp&w=48&q=75" class="card-img-top" alt="Card Image 5" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fs-li-mi.webp&w=48&q=75" class="card-img-top" alt="Card Image 6" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2>Frequently asked questions</h2>
+        <p >We are trying to resolve your doubts before commencing with us. If you are still <br>left with doubts, feel free to contact us.</p>
+      </div>
+    
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="accordion" id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How cost effective is digital marketing over traditional marketing?
+                  </button>
+                </h5>
+              </div>
+    
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possibDigital marketing is cost effective. Unlike in traditional marketing where you have to depend on newspapers, print media for marketing your products which is quite expensive, most of the digital platforms are freely and readily available. Using digital platforms can help you reach a wider audience in less time which reduces the overall cost.
+                </div>
+              </div>
+            </div>
+    
+            <!-- FAQ Item 2 -->
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Would my business benefit from Digital marketing services?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Yes definitely. As more people are using the internet looking for products and services, employing digital marketing services from a leading digital marketing company like zeksta will benefit you in many ways
+                </div>
+              </div>
+            </div>
+    
+            <!-- FAQ Item 3 -->
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    What does your digital marketing team include?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Our digital marketing team consists of marketers, SEO specialist, social media experts, PPC adwords specialists , analytics specialist, content writers and graphic designers.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-lg-12">
+          <!-- FAQ Item 4 -->
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Is SEO important?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+              <div class="card-body">
+                Yes, If you have a website, but it’s not ranking on search engines. Then you are losing your customers to your competitors. Having a SEO strategy to rank your website higher On search engine is a must. Our SEO experts will help with that.
+              </div>
+            </div>
+          </div>
+    
+          <!-- FAQ Item 5 -->
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  How long will it take to rank my website on the first page of Google?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+              <div class="card-body">
+                It depends on your website’s age. It will take time to rank a website that is newly launched. Typically it can take 6months to a year to rank your new website on Google.
+              </div>
+            </div>
+          </div>
+    
+          <!-- FAQ Item 6 -->
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  What SEO practises does your team follow?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+              <div class="card-body">
+                Our digital marketing team follows white hat SEO techniques to rank your website. We make sure our strategies are in line with the search engine guidelines in order to avoid penalties to your website
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--footer part-->
+<div class="container-fluid mt-5 " style="background-color: rgb(5, 2, 18);">
+  <div class="row">
+  <div class="col-md-6  mt-4 text-white">
+      <img src="https://www.zeksta.com/zeksta-dark.svg"style="height:70px;background-color:white;"> <br>
+      <p class="mt-4">From brainstorming brilliant ideas to flawless launches, Zeksta Technology seamlessly handles your website and app development, empowering you to conquer the digital world.</p>
+      <br>
+      <h6>Follow us on :</h6>
+      <div class="col-md-5 mt-5">
+          
+          <p>
+            <i class="fab fa-facebook-f icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-twitter icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-youtube icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-instagram icon"style="font-size: 30px;"></i>
+      
+          </p>
+        </div>
+
+  </div>
+  <div class="col-md-6 mt-4">    
+      <div class="row">
+          <div class="col-md-2.5">
+              <a href="#" style="color: white;">Who we are &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">What we do &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Hire developers &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Tech we Love &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Skype ID </h6>
+              <p>Live:zekstatech</p>
+          </div>
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Email Us </h6>
+              <p>solution@zeksta.com</p>
+          </div>
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Call Us </h6>
+              <p>+1(214)4734395  +919620390226</p>
+          </div>
+      </div>
+      <h4 class="text-white">Location</h4><br>
+      <div class="row">
+          <div class="col-md-5 text-white">
+              <h6 style="color:white;">INDIA </h6>
+              <p>Zeksta Technology Pvt. Ltd. 982, 4th Floor, Marvi Arcade, BTM 4th Stage, Vijaya Bank Layout, Bengaluru, Karnataka-560076</p>
+          </div>
+          <div class="col-md-5 text-white">
+              <h6 style="color:white;">USA </h6>
+             <p>Zeksta Technology Pvt Ltd 539 W. Commerce St #3504 Dallas, TX 75208</p>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid" style="background-color: black;">
+  <div class="row">
+      <div class="col-md-9 text-white ">
+          <p>2017 - 2024 © All rights reserved.Zeksta Technology Pvt. Ltd.</p>
+      </div>
+      <div class="col-md-3">
+          <div class="row">
+              <div class="col-md-6 text-white text-center"">
+                 <p>Sitemap &nbsp;|</p> 
+              </div>
+              <div class="col-md-6 text-white text-center""> 
+                <p> Privacy Policy</p> 
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+   
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body></html>

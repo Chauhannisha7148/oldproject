@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    .background-banner {
+      background-image: url('./img/banner0.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: #fff;
+    }
+    .dropdown-submenu {
+      position: relative;
+    }
+    
+    .dropdown-submenu > .dropdown-menu {
+      left: 100%;
+      /* -6px gives dropdown-menu's padding+border */
+      top: -6px;
+    }
+    
+    .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+      /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+      display: block;
+    }
+    
+    /* Custom styles for banner */
+    .banner {
+        background: linear-gradient(135deg, #e25544 2.88%, #42127e 98.14%);
+      background-size: cover;
+      color: white;
+      padding: 100px 0; /* Adjust padding as needed */
+      text-align: center;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="home2.html"><img src="./img/zeksta-dark.svg"style="height:60px"> </a>
+            
+        </div>
+        <div class="col-md-8">
+            
+            <nav class="navbar navbar-expand-sm ">
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a>
+               -->
+                <!-- Links -->
+                <ul class="navbar-nav text-dark">
+                  
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: large;">
+                      Who we are
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-dark" href="about.html" style="font-size: large;">About Us</a>
+                      <a class="dropdown-item text-dark" href="join-us.html" style="font-size: large;">Join Us</a>
+                      
+                    </div>
+                  </li>
+                  
+                  <!-- Dropdown -->
+                  <div class="dropdown open mt-2 text-dark text-center">
+                    <a class=" dropdown-toggle text-dark" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="font-size: large;">
+                      what we do
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+                      <li class="dropdown-submenu text-dark">
+                        <a  class="text-dark" href="overview.html"style="font-size: large;padding:20px">Overview</a>
+                        
+                      </li>
+                      <li class="dropdown-submenu ">
+                        <a  class="text-dark "  href="#"style="font-size: large;padding:20px">Services</a>
+                        <ul class="dropdown-menu" style="font-size: large;padding:30px">
+                          <li><a  class="text-dark  "   href="Blockchain.html">Blockchain Development</a></li>
+                          <li><a  class="text-dark "   href="chatbot.html">Chatbot</a></li>
+                          <li><a  class="text-dark "  href="Artificial-Intelligence.html">Artificial Intelligence</a></li>
+                          <li><a  class="text-dark"   href="Internet_of_things.html">Internet of Things(IoT)</a></li>
+
+                          <li><a  class="text-dark"   href="website_development.html">Website Development</a></li>
+                          <li><a   class="text-dark"  href="mobile_application_development.html">Mobile Application Development</a></li>
+                          <li><a   class="text-dark"  href="Digital_strategy.html">Digital Strategy</a></li>
+                          <li><a    class="text-dark" href="web_design.html">Web Design</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Industries</a>
+                        <ul class="dropdown-menu " style="font-size: large;padding:30px">
+                          <li><a  class="text-dark"   href="Health_care.html">Health Care</a></li>
+                          <li><a  class="text-dark"   href="Education_E-learning.html">Education & E-Learning</E-Learning></a></li>
+                          <li><a   class="text-dark"  href="Logistics and Transportation.html">Logistics and Transportion</a></li>
+                          <li><a   class="text-dark"  href="Retails _E-commerce.html">Retails & E-Learning</a></li>
+                          <li><a   class="text-dark"  href="Business .html">Business & Finance</a></li>
+                          <li><a  class="text-dark"   href="Media_Entertainment.html">Media & Entertainment</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Approaches</a>
+                        <ul class="dropdown-menu"style="font-size:large;padding:20px">
+                          <li><a  class="text-dark"   href="approach-delivery.html">Delivery Model</a></li>
+                          <li><a  class="text-dark"   href="approach-development.html">Development Mrthodology</a></li>
+                          <li><a  class="text-dark"   href="approach-engagement.html">Engagement Models</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="hire.html"style="font-size: large;">Hire developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="blog.html"style="font-size: large;">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="teach-we.html"style="font-size: large;">Tech we Love</a>
+                  </li>
+                  <li>
+                    <a href="let.html" class="btn  ml-3 " style="color:black; border: 1px solid gray;  ">Let's Talk</a>
+                  
+                  </li>
+                    
+                </ul>
+              </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>We craft your innovative thought in the digital world</p>
+        </div>
+    </div>
+</div>
+<!--second container-->
+  <div class="container-fluid banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mt-5">
+          <h1 style="text-align: left;">Services</h1>
+          <p style="text-align: left; margin-top: 20px;">At Zeksta Technologies, we offer cutting-edge web and mobile development, cloud <br>services, and cybersecurity solutions tailored to your business needs. Harness our<br> expertise for a scalable, secure digital infrastructure that propels your strategic goals<br> forward.
+
+          </p>
+          <a href="#" class="btn btn-primary" style="margin-right: 620px; margin-top: 20px; background-color: black; border: transparent; width: 120px;">Let's Talk</a>
+        </div>
+        <div class="col-md-4">
+          <img src="https://www.zeksta.com/_next/static/media/Services-img.bd531af6.svg" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-12 text-center mt-5">
+        <h1>Our Expertise</h1>
+      </div>
+    </div>
+    <div class="row mt-4">
+      
+      <!-- First Column with Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body" style="background-color: black;">
+            <h4 class="card-title text-center" style="color: white;">Website Development
+                </h4>
+            <p class="card-text" style="color: white; padding-top: 20px;">We create high quality, interactive better user experience websites considering your requirements. We practice and develop 100% responsive websites. To enhance your user experience connect with us.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Second Column with Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body" style="background-color: black;">
+            <h4 class="card-title text-center " style="color: white;">UI/UX</h4>
+            <p class="card-text"style="color: white; padding-top: 20px;">Stay one step forward amongst the competitors with the latest trendy design. Our expert designing team provides research based design for your application or website.
+
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body"style="background-color: black;">
+            <h4 class="card-title text-center" style="color: white;">Mobile App Development
+            </h4>
+            <p class="card-text" style="color: white; padding-top: 20px;">Mobile applications are playing vital roles in running your business. Our expert developer delivering successful applications from years. We are working on Android, iOS and hybrid App development</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+     <!--footer part-->
+<div class="container-fluid mt-5 " style="background-color: rgb(5, 2, 18);">
+  <div class="row">
+  <div class="col-md-6  mt-4 text-white">
+      <img src="https://www.zeksta.com/zeksta-dark.svg"style="height:70px;background-color:white;"> <br>
+      <p class="mt-4">From brainstorming brilliant ideas to flawless launches, Zeksta Technology seamlessly handles your website and app development, empowering you to conquer the digital world.</p>
+      <br>
+      <h6>Follow us on :</h6>
+      <div class="col-md-5 mt-5">
+          
+          <p>
+            <i class="fab fa-facebook-f icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-twitter icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-youtube icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-instagram icon"style="font-size: 30px;"></i>
+      
+          </p>
+        </div>
+
+  </div>
+  <div class="col-md-6 mt-4">    
+      <div class="row">
+          <div class="col-md-2.5">
+              <a href="#" style="color: white;">Who we are &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">What we do &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Hire developers &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Tech we Love &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Skype ID </h6>
+              <p>Live:zekstatech</p>
+          </div>
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Email Us </h6>
+              <p>solution@zeksta.com</p>
+          </div>
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Call Us </h6>
+              <p>+1(214)4734395  +919620390226</p>
+          </div>
+      </div>
+      <h4 class="text-white">Location</h4><br>
+      <div class="row">
+          <div class="col-md-5 text-white">
+              <h6 style="color:white;">INDIA </h6>
+              <p>Zeksta Technology Pvt. Ltd. 982, 4th Floor, Marvi Arcade, BTM 4th Stage, Vijaya Bank Layout, Bengaluru, Karnataka-560076</p>
+          </div>
+          <div class="col-md-5 text-white">
+              <h6 style="color:white;">USA </h6>
+             <p>Zeksta Technology Pvt Ltd 539 W. Commerce St #3504 Dallas, TX 75208</p>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid" style="background-color: black;">
+  <div class="row">
+      <div class="col-md-9 text-white ">
+          <p>2017 - 2024 © All rights reserved.Zeksta Technology Pvt. Ltd.</p>
+      </div>
+      <div class="col-md-3">
+          <div class="row">
+              <div class="col-md-6 text-white text-center"">
+                 <p>Sitemap &nbsp;|</p> 
+              </div>
+              <div class="col-md-6 text-white text-center""> 
+                <p> Privacy Policy</p> 
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body></html>

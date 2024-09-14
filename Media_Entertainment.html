@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    .background-banner {
+      background-image: url('./img/banner0.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: #fff;
+    }
+    .dropdown-submenu {
+      position: relative;
+    }
+    
+    .dropdown-submenu > .dropdown-menu {
+      left: 100%;
+      /* -6px gives dropdown-menu's padding+border */
+      top: -6px;
+    }
+    
+    .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+      /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+      display: block;
+    }
+    
+    /* Custom styles for banner */
+    .banner {
+        background: linear-gradient(135deg, #e25544 2.88%, #42127e 98.14%);
+      background-size: cover;
+      color: white;
+      padding: 100px 0; /* Adjust padding as needed */
+      text-align: center;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="home2.html"><img src="./img/zeksta-dark.svg"style="height:60px"> </a>
+            
+        </div>
+        <div class="col-md-8">
+            
+            <nav class="navbar navbar-expand-sm ">
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a>
+               -->
+                <!-- Links -->
+                <ul class="navbar-nav text-dark">
+                  
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: large;">
+                      Who we are
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-dark" href="about.html" style="font-size: large;">About Us</a>
+                      <a class="dropdown-item text-dark" href="join-us.html" style="font-size: large;">Join Us</a>
+                      
+                    </div>
+                  </li>
+                  
+                  <!-- Dropdown -->
+                  <div class="dropdown open mt-2 text-dark text-center">
+                    <a class=" dropdown-toggle text-dark" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="font-size: large;">
+                      what we do
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+                      <li class="dropdown-submenu text-dark">
+                        <a  class="text-dark" href="overview.html"style="font-size: large;padding:20px">Overview</a>
+                        
+                      </li>
+                      <li class="dropdown-submenu ">
+                        <a  class="text-dark "  href="#"style="font-size: large;padding:20px">Services</a>
+                        <ul class="dropdown-menu" style="font-size: large;padding:30px">
+                          <li><a  class="text-dark  "   href="Blockchain.html">Blockchain Development</a></li>
+                          <li><a  class="text-dark "   href="chatbot.html">Chatbot</a></li>
+                          <li><a  class="text-dark "  href="Artificial-Intelligence.html">Artificial Intelligence</a></li>
+                          <li><a  class="text-dark"   href="Internet_of_things.html">Internet of Things(IoT)</a></li>
+
+                          <li><a  class="text-dark"   href="website_development.html">Website Development</a></li>
+                          <li><a   class="text-dark"  href="mobile_application_development.html">Mobile Application Development</a></li>
+                          <li><a   class="text-dark"  href="Digital_strategy.html">Digital Strategy</a></li>
+                          <li><a    class="text-dark" href="web_design.html">Web Design</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Industries</a>
+                        <ul class="dropdown-menu " style="font-size: large;padding:30px">
+                          <li><a  class="text-dark"   href="Health_care.html">Health Care</a></li>
+                          <li><a  class="text-dark"   href="Education_E-learning.html">Education & E-Learning</E-Learning></a></li>
+                          <li><a   class="text-dark"  href="Logistics and Transportation.html">Logistics and Transportion</a></li>
+                          <li><a   class="text-dark"  href="Retails _E-commerce.html">Retails & E-Learning</a></li>
+                          <li><a   class="text-dark"  href="Business .html">Business & Finance</a></li>
+                          <li><a  class="text-dark"   href="Media_Entertainment.html">Media & Entertainment</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Approaches</a>
+                        <ul class="dropdown-menu"style="font-size:large;padding:20px">
+                          <li><a  class="text-dark"   href="approach-delivery.html">Delivery Model</a></li>
+                          <li><a  class="text-dark"   href="approach-development.html">Development Mrthodology</a></li>
+                          <li><a  class="text-dark"   href="approach-engagement.html">Engagement Models</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="hire.html"style="font-size: large;">Hire developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="blog.html"style="font-size: large;">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="teach-we.html"style="font-size: large;">Tech we Love</a>
+                  </li>
+                  <li>
+                    <a href="let.html" class="btn  ml-3 " style="color:black; border: 1px solid gray;  ">Let's Talk</a>
+                  
+                  </li>
+                    
+                </ul>
+              </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>We craft your innovative thought in the digital world</p>
+        </div>
+    </div>
+</div>
+<!--second container-->
+  <div class="container-fluid banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mt-5">
+          <h1 style="text-align: left;">Media & Entertainment
+        </h1>
+          <p style="text-align: left; margin-top: 20px;">Our cutting-edge solutions for digital asset management, OTT streaming, gaming, <br>among others, help our clients to boost their business performance, improve user <br>experience, and increase engagement rates.
+
+
+
+
+
+
+
+          </p>
+          <a href="#" class="btn btn-primary" style="margin-right: 620px; margin-top: 20px; background-color: black; border: transparent; width: 120px;">Let's Talk</a>
+        </div>
+        <div class="col-md-4">
+          <img src="https://www.zeksta.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbro.f83f5ff5.png&w=3840&q=75" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" style="margin-top: 100px;">
+        <img src="https://www.zeksta.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcuate1.71a0da84.png&w=3840&q=75" class="img-fluid" alt="Image">
+      </div>
+      <div class="col-md-8">
+        <h2 style="margin-top: 100px;">Media & Entertainment software <br>development services</h2>
+        <p style="margin-top: 30px;">Zeksta technology is a market leader in custom media and entertainment software <br>solutions. Leveraging the power of technology, we help our clients create the next big <br>software in the media and entertainment industry, and change the way people experience <br>entertainment across the globe. Our cutting-edge solutions for digital asset management,<br> OTT streaming, gaming, among others, help our clients to boost their business performance,<br> improve user experience, and increase engagement rates. If you are looking for low-cost <br>software development services, Zeksta technology is your one-stop shop for all your media <br>& entertainment software solution needs.
+
+<br></p>
+        <a href="#" class="btn btn-primary mt-3" style="background-color: black; width: 150px; border-radius: 10px; border: transparent;">Let's Talk</a>
+      </div>
+    </div>
+  </div><br><br>
+  <div class="container-fluid " style="background-color: black;">
+    
+    <div class="row">
+      <div class="col-md-12 text-center mt-5">
+        <h1 style="color: white;">
+            Our Media & Entertainment software development services
+            </h1>
+      </div>
+    </div><br>
+    <div class="row mt-4 ">
+      <!-- First Column with Card -->
+      <div class="col-md-4 mb-5">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/static/media/iot-exp3.1824b6b2.svg" class="card-img-top" alt="Website Development" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white; ">
+            <h4 class="card-title text-left" style="color:black; ">OTT software solution</h4>
+            <p class="card-text" style="color: black; padding-top: 20px;">
+                We offer OTT software solutions that the enable you to deliver any kind of streaming content in the OTT ...
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Second Column with Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ferp.a4e12426.png&w=256&q=75" class="card-img-top" alt="UI/UX" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white;">
+            <h4 class="card-title text-left" style="color:black; ">ERP</h4>
+            <p class="card-text" style="color:black; padding-top: 20px;">
+                We develop ERP for the media and entertainment that are specially developed software that helps orga...
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Third Column with Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcrm.921ca284.png&w=256&q=75" class="card-img-top" alt="Mobile App Development" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white;">
+            <h4 class="card-title text-left" style="color: black;">CRM</h4>
+            <p class="card-text" style="color: black; padding-top: 20px;">
+                We offer customer relationship management services for the media and entertainment industry that all...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <!-- Left Column with Heading -->
+      <div class="col-md-5" style="margin-top: 150px;">
+        <h2>Why choose zeksta for your media and entertainment software needs?</h2>
+      </div>
+  
+      <!-- Right Column with Two Rows -->
+      <div class="col-md-7" style="margin-top: 100px;">
+        <div class="row">
+          <!-- First Row - First Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/blockchain-exp6.12c072ee.svg" class="card-img-top" alt="Image 1" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h6 class="card-title">Affordable solutions</h6>
+                <p class="card-text">We offer software development services at the an affordable cost. We offer you the best software solutio..</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- First Row - Second Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/our-logistic-exp5.49023d36.svg" class="card-img-top" alt="Image 2" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h6 class="card-title">Experienced developers</h6>
+                <p class="card-text">Our designers build customer centric software solutions with great UI/UX design to provide users wit..</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <!-- Second Row - First Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/blockchain-why4.d1b37b1d.svg" class="card-img-top" alt="Image 3" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h6 class="card-title">Data security</h6>
+                <p class="card-text">Our team ensures that all your project data and data are completely safe with us. We follow s...</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Second Row - Second Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/blockchain-why3.2a57e022.svg" class="card-img-top" alt="Image 4"style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h6 class="card-title">24/7 availability
+
+
+                </h6>
+                <p class="card-text">We provide 24/7 support via phone, email, or channel that can be availed to get quick help anytime, ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid " style="background-color: black;">
+    
+    <div class="row">
+      <div class="col-md-12 text-center mt-5">
+        <h1 style="color: white;">Our Expertise</h1>
+      </div>
+    </div><br>
+    <div class="row mt-4 ">
+      <!-- First Column with Card -->
+      <div class="col-md-4 mb-5">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/static/media/our-bank-exp1.8c22ed74.svg" class="card-img-top" alt="Website Development" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white; ">
+            <h4 class="card-title text-left" style="color:black; ">Artificial Intelligence</h4>
+            <p class="card-text" style="color: black; padding-top: 20px;">
+              Our AI-driven software solutions help retailers to find patterns in customer behavior from prior pur...
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Second Column with Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/static/media/our-bank-exp2.7fb0d058.svg" class="card-img-top" alt="UI/UX" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white;">
+            <h4 class="card-title text-left" style="color:black; ">Internet of Things</h4>
+            <p class="card-text" style="color:black; padding-top: 20px;">
+              IoT-enabled devices interchange data among each other efficiently within an internet network that ai...
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Third Column with Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/static/media/our-logistic-exp3.a8f5ccff.svg" class="card-img-top" alt="Mobile App Development" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white;">
+            <h4 class="card-title text-left" style="color: black;">AR/VR</h4>
+            <p class="card-text" style="color: black; padding-top: 20px;">
+              E-commerce businesses can leverage our expertise in augmented and virtual reality with an interactiv...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="py-5 text-center">
+      <h2>Frequently asked questions</h2>
+      <p >We are trying to resolve your doubts before commencing with us. If you are still <br>left with doubts, feel free to contact us.</p>
+    </div>
+  
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ Item 1 -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  How can web development services benefit our media and entertainment business?
+                </button>
+              </h5>
+            </div>
+  
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+              <div class="card-body">
+                Web development services can significantly benefit your media and entertainment business by creating visually engaging and responsive websites, content delivery platforms, and interactive applications. These solutions enhance user experiences, increase audience engagement, and provide a seamless platform for distributing and monetizing your media content.
+              </div>
+            </div>
+          </div>
+  
+          <!-- FAQ Item 2 -->
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Can you integrate web solutions with our existing media systems, such as content management systems (CMS) and video streaming platforms?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+              <div class="card-body">
+                Yes, our web development services are designed to seamlessly integrate with your existing media systems, including CMS, video streaming platforms, and other relevant tools. Integration ensures efficient content distribution, streamlined management, and a cohesive digital environment that supports your media and entertainment operations.
+              </div>
+            </div>
+          </div>
+  
+          <!-- FAQ Item 3 -->
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  How can digital marketing strategies be applied to promote our media content and engage with our audience?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+              <div class="card-body">
+                Digital marketing strategies can be customized to promote your media content by optimizing your online presence, running targeted advertising campaigns, and engaging with your audience through social media and content marketing. This approach helps increase viewership, build brand loyalty, and maximize the reach of your media and entertainment offerings.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-lg-12">
+        <!-- FAQ Item 4 -->
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Can your web development services assist in creating a user-friendly and visually appealing mobile app for our media content?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+            <div class="card-body">
+              Absolutely. Our web development services include creating mobile-responsive e-commerce platforms and dedicated mobile apps. These solutions ensure a seamless shopping experience for users across various devices, including smartphones and tablets. A mobile-friendly approach enhances accessibility, attracts a wider audience, and contributes to increased conversions.
+            </div>
+          </div>
+        </div>
+  
+        <!-- FAQ Item 5 -->
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                How do you ensure scalability and performance for media platforms, especially during peak usage times?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+            <div class="card-body">
+              Ensuring scalability and performance is crucial for media platforms. Our web development services utilize scalable architectures, content delivery networks (CDN), and performance optimization techniques to handle increased traffic during peak usage times. This ensures a smooth and uninterrupted experience for your audience, even during high-demand periods.
+            </div>
+          </div>
+        </div>
+  </div>
+    </div>
+  </div>
+     <!--footer part-->
+<div class="container-fluid mt-5 " style="background-color: rgb(5, 2, 18);">
+  <div class="row">
+  <div class="col-md-6  mt-4 text-white">
+      <img src="https://www.zeksta.com/zeksta-dark.svg"style="height:70px;background-color:white;"> <br>
+      <p class="mt-4">From brainstorming brilliant ideas to flawless launches, Zeksta Technology seamlessly handles your website and app development, empowering you to conquer the digital world.</p>
+      <br>
+      <h6>Follow us on :</h6>
+      <div class="col-md-5 mt-5">
+          
+          <p>
+            <i class="fab fa-facebook-f icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-twitter icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-youtube icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-instagram icon"style="font-size: 30px;"></i>
+      
+          </p>
+        </div>
+
+  </div>
+  <div class="col-md-6 mt-4">    
+      <div class="row">
+          <div class="col-md-2.5">
+              <a href="#" style="color: white;">Who we are &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">What we do &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Hire developers &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Tech we Love &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Skype ID </h6>
+              <p>Live:zekstatech</p>
+          </div>
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Email Us </h6>
+              <p>solution@zeksta.com</p>
+          </div>
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Call Us </h6>
+              <p>+1(214)4734395  +919620390226</p>
+          </div>
+      </div>
+      <h4 class="text-white">Location</h4><br>
+      <div class="row">
+          <div class="col-md-5 text-white">
+              <h6 style="color:white;">INDIA </h6>
+              <p>Zeksta Technology Pvt. Ltd. 982, 4th Floor, Marvi Arcade, BTM 4th Stage, Vijaya Bank Layout, Bengaluru, Karnataka-560076</p>
+          </div>
+          <div class="col-md-5 text-white">
+              <h6 style="color:white;">USA </h6>
+             <p>Zeksta Technology Pvt Ltd 539 W. Commerce St #3504 Dallas, TX 75208</p>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid" style="background-color: black;">
+  <div class="row">
+      <div class="col-md-9 text-white ">
+          <p>2017 - 2024 © All rights reserved.Zeksta Technology Pvt. Ltd.</p>
+      </div>
+      <div class="col-md-3">
+          <div class="row">
+              <div class="col-md-6 text-white text-center"">
+                 <p>Sitemap &nbsp;|</p> 
+              </div>
+              <div class="col-md-6 text-white text-center""> 
+                <p> Privacy Policy</p> 
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+       
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body></html>

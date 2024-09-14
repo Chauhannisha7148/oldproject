@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    .dropdown-submenu {
+      position: relative;
+    }
+    
+    .dropdown-submenu > .dropdown-menu {
+      left: 100%;
+      /* -6px gives dropdown-menu's padding+border */
+      top: -6px;
+    }
+    
+    .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+      /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+      display: block;
+    }
+    
+    /* Custom styles for banner */
+    .banner {
+        background: linear-gradient(135deg, #e25544 2.88%, #42127e 98.14%);
+      background-size: cover;
+      color: white;
+      padding: 100px 0; /* Adjust padding as needed */
+      text-align: center;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="home2.html"><img src="./img/zeksta-dark.svg"style="height:60px"> </a>
+            
+        </div>
+        <div class="col-md-8">
+            
+            <nav class="navbar navbar-expand-sm ">
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a>
+               -->
+                <!-- Links -->
+                <ul class="navbar-nav text-dark">
+                  
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: large;">
+                      Who we are
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-dark" href="about.html" style="font-size: large;">About Us</a>
+                      <a class="dropdown-item text-dark" href="join-us.html" style="font-size: large;">Join Us</a>
+                      
+                    </div>
+                  </li>
+                  
+                  <!-- Dropdown -->
+                  <div class="dropdown open mt-2 text-dark text-center">
+                    <a class=" dropdown-toggle text-dark" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="font-size: large;">
+                      what we do
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+                      <li class="dropdown-submenu text-dark">
+                        <a  class="text-dark" href="overview.html"style="font-size: large;padding:20px">Overview</a>
+                        
+                      </li>
+                      <li class="dropdown-submenu ">
+                        <a  class="text-dark "  href="#"style="font-size: large;padding:20px">Services</a>
+                        <ul class="dropdown-menu" style="font-size: large;padding:30px">
+                          <li><a  class="text-dark  "   href="Blockchain.html">Blockchain Development</a></li>
+                          <li><a  class="text-dark "   href="chatbot.html">Chatbot</a></li>
+                          <li><a  class="text-dark "  href="Artificial-Intelligence.html">Artificial Intelligence</a></li>
+                          <li><a  class="text-dark"   href="Internet_of_things.html">Internet of Things(IoT)</a></li>
+
+                          <li><a  class="text-dark"   href="website_development.html">Website Development</a></li>
+                          <li><a   class="text-dark"  href="mobile_application_development.html">Mobile Application Development</a></li>
+                          <li><a   class="text-dark"  href="Digital_strategy.html">Digital Strategy</a></li>
+                          <li><a    class="text-dark" href="web_design.html">Web Design</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Industries</a>
+                        <ul class="dropdown-menu " style="font-size: large;padding:30px">
+                          <li><a  class="text-dark"   href="Health_care.html">Health Care</a></li>
+                          <li><a  class="text-dark"   href="Education_E-learning.html">Education & E-Learning</E-Learning></a></li>
+                          <li><a   class="text-dark"  href="Logistics and Transportation.html">Logistics and Transportion</a></li>
+                          <li><a   class="text-dark"  href="Retails _E-commerce.html">Retails & E-Learning</a></li>
+                          <li><a   class="text-dark"  href="Business .html">Business & Finance</a></li>
+                          <li><a  class="text-dark"   href="Media_Entertainment.html">Media & Entertainment</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Approaches</a>
+                        <ul class="dropdown-menu"style="font-size:large;padding:20px">
+                          <li><a  class="text-dark"   href="approach-delivery.html">Delivery Model</a></li>
+                          <li><a  class="text-dark"   href="approach-development.html">Development Mrthodology</a></li>
+                          <li><a  class="text-dark"   href="approach-engagement.html">Engagement Models</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="hire.html"style="font-size: large;">Hire developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="blog.html"style="font-size: large;">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="teach-we.html"style="font-size: large;">Tech we Love</a>
+                  </li>
+                  <li>
+                    <a href="let.html" class="btn  ml-3 " style="color:black; border: 1px solid gray;  ">Let's Talk</a>
+                  
+                  </li>
+                    
+                </ul>
+              </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>We craft your innovative thought in the digital world</p>
+        </div>
+    </div>
+</div>
+  <!--second container-->
+  <div class="container-fluid banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mt-5">
+          <h1 style="text-align: left;">Web Design Services</h1>
+          <p style="text-align: left; margin-top: 20px;">
+
+            Web Design Services in USA : We as a web design company integrate your emotions<br> and stories with the beautiful web design of your products or services. Retain your <br>customer satisfaction fulfilling the expectations with your brilliant responsive <br>website and services all the time. Bring your business to fruition with us.
+
+          </p>
+          <a href="#" class="btn btn-primary" style="margin-right: 620px; margin-top: 20px; background-color: black; border: transparent; width: 120px;">Let's Talk</a>
+        </div>
+        <div class="col-md-4">
+          <img src="https://www.zeksta.com/_next/static/media/webdesign-banner.e5a82a53.svg" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" style="margin-top: 100px;">
+        <img src="https://www.zeksta.com/_next/static/media/webdesign-develop.78228406.svg" class="img-fluid" alt="Image">
+      </div>
+      <div class="col-md-8">
+        <h2 style="margin-top: 100px;">Why invest in professional web design Services ?</h2>
+        <p style="margin-top: 30px;">Look at the following factors and observe why you should invest in web design companies & services to get custom and responsive web designs
+<br><br>
+          1. Authentic Recognition: Develop active networking with your customers through online presence across the world.
+          <br>
+         2. Build your Brand: Stay close to every customer through the web brand. Demonstrate what you serve them with your brand.
+          <br>
+          3. Connect through Web services:Website presence has excessive power to connect with customers quicker. And it simply gives a brief preview of your services and products
+         <br>
+         4. Boost profits up: The customers get greater interest to purchase when you show the complete details of the products or services. The more clear information, the more profits.
+          <br>
+         5. Enhance Usability: Provide the best user experience, which makes your products user-friendly. It works as a strong bond between customers and clients.
+          <br>
+        6. Be Unique: Provide the speciality of your services and qualities, which makes them unique while using your services.</p>
+        <a href="#" class="btn btn-primary mt-3" style="background-color: black; width: 150px; border-radius: 10px; border: transparent;">Let's Talk</a>
+      </div>
+    </div>
+  </div><br><br>
+  <div class="container-fluid " style="background-color: black;">
+    
+    <div class="row">
+      <div class="col-md-12 text-center mt-5">
+        <h1 style="color: white;">Our Expertise</h1>
+      </div>
+    </div><br>
+    <div class="row mt-4 ">
+      <!-- First Column with Card -->
+      <div class="col-md-4 mb-5">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/static/media/webdesign-exp1.2258cc9f.svg" class="card-img-top" alt="Website Development" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white; ">
+            <h4 class="card-title text-left" style="color:black; ">Custom web design services</h4>
+            <p class="card-text" style="color: black; padding-top: 20px;">
+              We enjoy learning and coding in our day-to-day professional world. We have well-trained custom websi...
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Second Column with Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/static/media/webdesign-exp4.1ae145be.svg" class="card-img-top" alt="UI/UX" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white;">
+            <h4 class="card-title text-left" style="color:black; ">Digital marketing</h4>
+            <p class="card-text" style="color:black; padding-top: 20px;">
+              We prepare successful digital marketing strategies to make of you powerful in the digital world sales a...
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Third Column with Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/static/media/webdesign-exp3.7e5f1b5a.svg" class="card-img-top" alt="Mobile App Development" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white;">
+            <h4 class="card-title text-left" style="color: black;">Search engine optimization</h4>
+            <p class="card-text" style="color: black; padding-top: 20px;">
+              Be the first on Google. We prioritise the long term leads and sales of conversion than getting maximum ...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-12 text-center">
+        <h2>Tech We Love</h2>
+        <p style="margin-top: 20px;">Discovering and Celebrating the Best in Technology.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center mt-3">
+        <p>
+          <a href="#" class="btn " style="border: 1px solid black; background-color: black; color: aliceblue;">Top</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Web</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Mobile</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Backend</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Design</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Database</a>
+          <a href="#" class="btn " style="border: 1px solid black;">DevOps & Cloud</a>
+          <a href="#" class="btn" style="border: 1px solid black;">QA</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Blockchain</a>
+          <a href="#" class="btn" style="border: 1px solid black;">Salesforce</a>
+        </p>
+      </div>
+    </div>
+    </div><br><br>
+    <div class="container " style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+    border-radius: 20px;
+    box-sizing: border-box;
+"><br>
+      <div class="row mt-5">
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fangular.webp&w=96&q=75" class="card-img-top" alt="Card Image 1" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Freact.webp&w=96&q=75" class="card-img-top" alt="Card Image 2" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fvue.webp&w=96&q=75" class="card-img-top" alt="Card Image 3" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/typescript.svg" class="card-img-top" alt="Card Image 4" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fnextjs.webp&w=48&q=75" class="card-img-top" alt="Card Image 5" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/nuxtjs.svg" class="card-img-top" alt="Card Image 6" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fflutter.webp&w=96&q=75" class="card-img-top" alt="Card Image 7" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/nodejs.svg" class="card-img-top" alt="Card Image 8" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-5">
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/nestjs.svg" class="card-img-top" alt="Card Image 1" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fgraphql.webp&w=96&q=75" class="card-img-top" alt="Card Image 2" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Ffirebase.webp&w=48&q=75" class="card-img-top" alt="Card Image 3" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Flaravel.webp&w=48&q=75" class="card-img-top" alt="Card Image 4" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/codeigniter.svg" class="card-img-top" alt="Card Image 5" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fror.webp&w=48&q=75" class="card-img-top" alt="Card Image 6" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fjava.webp&w=48&q=75" class="card-img-top" alt="Card Image 7" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fpython.webp&w=48&q=75" class="card-img-top" alt="Card Image 8" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-5">
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fgolang.webp&w=96&q=75" class="card-img-top" alt="Card Image 1" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Ffigma.webp&w=96&q=75" class="card-img-top" alt="Card Image 2" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fmy_sql.webp&w=96&q=75" class="card-img-top" alt="Card Image 3" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/mongodb.svg" class="card-img-top" alt="Card Image 4" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/postgres.svg" class="card-img-top" alt="Card Image 5" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fredis.webp&w=96&q=75" class="card-img-top" alt="Card Image 6" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/aws.svg" class="card-img-top" alt="Card Image 7" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fheroku.webp&w=96&q=75" class="card-img-top" alt="Card Image 8" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-5">
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/docker.svg" class="card-img-top" alt="Card Image 1" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fmocha.webp&w=96&q=75" class="card-img-top" alt="Card Image 2" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fchai.webp&w=96&q=75" class="card-img-top" alt="Card Image 3" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fweb3js.webp&w=48&q=75" class="card-img-top" alt="Card Image 4" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fs-cpq.webp&w=48&q=75" class="card-img-top" alt="Card Image 5" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fs-li-mi.webp&w=48&q=75" class="card-img-top" alt="Card Image 6" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2>Frequently asked questions</h2>
+        <p >We are trying to resolve your doubts before commencing with us. If you are still <br>left with doubts, feel free to contact us.</p>
+      </div>
+    
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="accordion" id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How do you safeguard our customers information?
+                  </button>
+                </h5>
+              </div>
+    
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                <div class="card-body">
+                  This is our responsibility to safeguard our clientele data so as yours. We design a complete secured website for protecting your customer information. There would be no threat against hackers while using your website. It is the safest one we develop for you. We bring an end-to-end encrypted method and verify the white hat systems.
+                </div>
+              </div>
+            </div>
+    
+            <!-- FAQ Item 2 -->
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What is the best device to use your built-website?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Why are you thinking of devices to use? You can take every device. We create user-friendly and most compatible web design for your business. You can give the freedom to your customers for accessing your products or services from all the devices. You will be everywhere in the customers’ mind.We deliver responsive web designs.
+                </div>
+              </div>
+            </div>
+    
+            <!-- FAQ Item 3 -->
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    When can I access my own website if I am committed to you?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                <div class="card-body">
+                  In a while, we launch your brand with awesome web designs for global recognition. The duration of finishing the website is in our both attribution. We need your ideas and goals then we make the website host online. It is just a matter of time getting content from your side and then we make it tangible within 4 weeks – 6 weeks. We build great user experience web designs as a experienced web design company.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-lg-12">
+          <!-- FAQ Item 4 -->
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  How do you market our brand?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+              <div class="card-body">
+                We market your business goals and achievements with our well-organized Web design, Digital Marketing, Content Management Service, Email Marketing, and based on your requirement. We craft successful strategies to get long-term customers retention and the steady growth of your business. we maintain a fairway, not the one-day success.
+              </div>
+            </div>
+          </div>
+    
+          <!-- FAQ Item 5 -->
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  How do you create our website? And What tech do you use?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+              <div class="card-body">
+                We cast your business online with cutting-edge technologies. We mostly adapt to ongoing trends of advanced technologies and keep crafting new frameworks of web products. We use our excellence in understanding the goals of your needs and services.
+              </div>
+            </div>
+          </div>
+    
+          <!-- FAQ Item 6 -->
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  How friendly is my website to use for the customers and myself?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+              <div class="card-body">
+                Our products are friendly in both search engines and users experiences. We develop handy web products where you can manage and use at your comfort. We integrate the users’ expectations with our super-skill in development services. We optimise the user experience and safety with a compact box, your product.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+     <!--footer part-->
+<div class="container-fluid mt-5 " style="background-color: rgb(5, 2, 18);">
+  <div class="row">
+  <div class="col-md-6  mt-4 text-white">
+      <img src="https://www.zeksta.com/zeksta-dark.svg"style="height:70px;background-color:white;"> <br>
+      <p class="mt-4">From brainstorming brilliant ideas to flawless launches, Zeksta Technology seamlessly handles your website and app development, empowering you to conquer the digital world.</p>
+      <br>
+      <h6>Follow us on :</h6>
+      <div class="col-md-5 mt-5">
+          
+          <p>
+            <i class="fab fa-facebook-f icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-twitter icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-youtube icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-instagram icon"style="font-size: 30px;"></i>
+      
+          </p>
+        </div>
+
+  </div>
+  <div class="col-md-6 mt-4">    
+      <div class="row">
+          <div class="col-md-2.5">
+              <a href="#" style="color: white;">Who we are &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">What we do &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Hire developers &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Tech we Love &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Skype ID </h6>
+              <p>Live:zekstatech</p>
+          </div>
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Email Us </h6>
+              <p>solution@zeksta.com</p>
+          </div>
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Call Us </h6>
+              <p>+1(214)4734395  +919620390226</p>
+          </div>
+      </div>
+      <h4 class="text-white">Location</h4><br>
+      <div class="row">
+          <div class="col-md-5 text-white">
+              <h6 style="color:white;">INDIA </h6>
+              <p>Zeksta Technology Pvt. Ltd. 982, 4th Floor, Marvi Arcade, BTM 4th Stage, Vijaya Bank Layout, Bengaluru, Karnataka-560076</p>
+          </div>
+          <div class="col-md-5 text-white">
+              <h6 style="color:white;">USA </h6>
+             <p>Zeksta Technology Pvt Ltd 539 W. Commerce St #3504 Dallas, TX 75208</p>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid" style="background-color: black;">
+  <div class="row">
+      <div class="col-md-9 text-white ">
+          <p>2017 - 2024 © All rights reserved.Zeksta Technology Pvt. Ltd.</p>
+      </div>
+      <div class="col-md-3">
+          <div class="row">
+              <div class="col-md-6 text-white text-center"">
+                 <p>Sitemap &nbsp;|</p> 
+              </div>
+              <div class="col-md-6 text-white text-center""> 
+                <p> Privacy Policy</p> 
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+       
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body></html>

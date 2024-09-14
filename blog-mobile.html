@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .background-banner {
+        background-image: url('./img/banner0.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: #fff;
+      }
+      .dropdown-submenu {
+        position: relative;
+      }
+      
+      .dropdown-submenu > .dropdown-menu {
+        left: 100%;
+        /* -6px gives dropdown-menu's padding+border */
+        top: -6px;
+      }
+      
+      .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+        /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+        display: block;
+      }
+      
+    .background-banner {
+        background-image: url('./img/background-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: #fff; 
+      }
+      .background-banner img{
+        position: absolute;
+      }
+      .container1 {
+        position: relative;
+        color: white;
+      }
+      
+      
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="home2.html"><img src="./img/zeksta-dark.svg"style="height:60px"> </a>
+            
+        </div>
+        <div class="col-md-8">
+            
+            <nav class="navbar navbar-expand-sm ">
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a>
+               -->
+                <!-- Links -->
+                <ul class="navbar-nav text-dark">
+                  
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: large;">
+                      Who we are
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-dark" href="about.html" style="font-size: large;">About Us</a>
+                      <a class="dropdown-item text-dark" href="join-us.html" style="font-size: large;">Join Us</a>
+                      
+                    </div>
+                  </li>
+                  
+                  <!-- Dropdown -->
+                  <div class="dropdown open mt-2 text-dark text-center">
+                    <a class=" dropdown-toggle text-dark" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="font-size: large;">
+                      what we do
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+                      <li class="dropdown-submenu text-dark">
+                        <a  class="text-dark" href="overview.html"style="font-size: large;padding:20px">Overview</a>
+                        
+                      </li>
+                      <li class="dropdown-submenu ">
+                        <a  class="text-dark "  href="#"style="font-size: large;padding:20px">Services</a>
+                        <ul class="dropdown-menu" style="font-size: large;padding:30px">
+                          <li><a  class="text-dark  "   href="Blockchain.html">Blockchain Development</a></li>
+                          <li><a  class="text-dark "   href="chatbot.html">Chatbot</a></li>
+                          <li><a  class="text-dark "  href="Artificial-Intelligence.html">Artificial Intelligence</a></li>
+                          <li><a  class="text-dark"   href="Internet_of_things.html">Internet of Things(IoT)</a></li>
+
+                          <li><a  class="text-dark"   href="website_development.html">Website Development</a></li>
+                          <li><a   class="text-dark"  href="mobile_application_development.html">Mobile Application Development</a></li>
+                          <li><a   class="text-dark"  href="Digital_strategy.html">Digital Strategy</a></li>
+                          <li><a    class="text-dark" href="web_design.html">Web Design</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Industries</a>
+                        <ul class="dropdown-menu " style="font-size: large;padding:30px">
+                          <li><a  class="text-dark"   href="Health_care.html">Health Care</a></li>
+                          <li><a  class="text-dark"   href="Education_E-learning.html">Education & E-Learning</E-Learning></a></li>
+                          <li><a   class="text-dark"  href="Logistics and Transportation.html">Logistics and Transportion</a></li>
+                          <li><a   class="text-dark"  href="Retails _E-commerce.html">Retails & E-Learning</a></li>
+                          <li><a   class="text-dark"  href="Business .html">Business & Finance</a></li>
+                          <li><a  class="text-dark"   href="Media_Entertainment.html">Media & Entertainment</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Approaches</a>
+                        <ul class="dropdown-menu"style="font-size:large;padding:20px">
+                          <li><a  class="text-dark"   href="approach-delivery.html">Delivery Model</a></li>
+                          <li><a  class="text-dark"   href="approach-development.html">Development Mrthodology</a></li>
+                          <li><a  class="text-dark"   href="approach-engagement.html">Engagement Models</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="hire.html"style="font-size: large;">Hire developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="blog.html"style="font-size: large;">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="teach-we.html"style="font-size: large;">Tech we Love</a>
+                  </li>
+                  <li>
+                    <a href="let.html" class="btn  ml-3 " style="color:black; border: 1px solid gray;  ">Let's Talk</a>
+                  
+                  </li>
+                    
+                </ul>
+              </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>We craft your innovative thought in the digital world</p>
+        </div>
+    </div>
+</div>
+   <!--second container-->
+    <div class="container-fluid background-banner">
+        <div class="row">
+            <div class="col-md-12 mt-5 " >
+                <h3 class=" ml-5 " style="margin-top: 0px;">What is the Best Platform to Develop Mobile Application??</h3>
+                <h6 class="ml-5">Dec 26, 2022</h6>
+               
+                    <a href="#" class="btn btn-primary ml-5 mt-3" style="background-color: black; border: transparent; margin-top: 20px; height: 42px; width:100px;">Let's Talk</a>
+                 <h1 class=" ml-5  mt-5" style="margin-top: 0px;">Ideating + Creating + Shipping</h1>
+            </div>
+            <!-- <div class="col-md-6 mb-5">
+                <img class="text-center mt-4 ml-5"  src="./img/we are hiring.jpg"height="200px" width="300px">
+            </div> -->
+            
+        </div>
+    </div>
+
+<div class="container mt-5">
+    <div class="row mt-5 ">
+        <h5>What is the Best Platform to Develop Mobile Application??</h5>
+        <p>We have lots of platforms to develop an application like Android, flutter, React native, etc. But flutter is best at that time according to that time because flutter was able to generate both native applications like android and IOS as well as flutter had a good SDK to develop applications and also had the facility to access the Google API or services in a very easy manner. Like when we use flutter, we can develop a website as well as a desktop application or MacBook applications as well as and apart from that why we did not use react native instead of flutter because react native is slow work their frames are not compiled faster than flutter. But flutter generates the code very easily and is also able to support the new android version.</p>
+        <p>Flutter generates a very high-speed animation as compared to react native that is why at that time flutter is more trending because it was very easy to develop an application as well as they provide lots of SDKs which help to the great new services in a very easy manner. Developing the payment gateway is not taking more than 30 minutes as well as the complex UI generated by Google.</p>
+        <p>As we say animating images using crawlers is very easy to develop in flutter but when we are going to develop the complex UI in react native it’s very complex to develop as well as react native is facing the issue of the word. But now flutter SDK is more stable and organized and their documentation is very good as compared to react native. And in Flutter we can get new features like local storage we can integrate in a very proper manner or very efficient manner also flutter is generating the core ways into native codes and also supports the native-like release of android as well as iOS.</p>
+    </div>
+
+    <div class="row mt-5">
+        
+        <ol>
+         <h5>Flutter Advantages:-</h5>
+            <li>Same user interface and business logic on all platforms</li>
+            <li>Code Development Time is Reduced</li>
+            <li>Time to market speed is increased</li>
+            <li>Custom, the animated user interface of any available complexity</li>
+            <li>Can develop high-performance apps</li>
+            <li>Rich motion APIs</li>
+        </ol>
+    </div>
+    <div class="row mt-5">
+        <h5>From Business Perspective is Flutter a Good Solutions</h5>
+        <p>Some things represent drastic value to a business. These are the stability of a platform, its performance, a large talent pool (it’s relatively easy to hire a Flutter developer), and the guarantee of successful technology/product development and enhancement. The reason is that problems and failures in a platform or technology in any of the listed aspects cause the occurrence of risks, along with direct and indirect financial losses for your company.</p>
+        <p>From this point of view, Flutter reduces the risks for your business:</p>
+        <p>It is not likely that there will be any problems with the development of the product since Google is creating the fuchsia operating system, which works perfectly with Flutter.</p>
+        <p>Using Flutter will not cause you any problems finding engineers because there are already a lot of fans among Android developers in the community.</p>
+        <p>Ease of Integration: The list of global companies using Flutter continues to grow with representatives like Alibaba, Google Ads, AppTree, Reflect, and My Leaf, which is proof of Flutter’s unmatched quality.</p>
+    </div>
+
+   <div class="mt-5">
+    <p>To build a website with the Flutter Application you can reach out to Zeksta Technologies which is one of the reputed <a href="hire.html" > <strong style="color: rgb(0, 106, 255);"> flutter app development company </strong></a>in India. We build beautiful, feature-rich mobile apps using flutter, which is designed to meet your specific needs.</p>
+   </div>
+</div>    
+
+
+ <!--footer part-->
+ <div class="container-fluid mt-5 " style="background-color: rgb(5, 2, 18);">
+    <div class="row">
+        <div class="col-md-6  mt-4 text-white">
+            <img src="https://www.zeksta.com/zeksta-dark.svg"style="height:70px;background-color:white;"> <br>
+            <p class="mt-4">From brainstorming brilliant ideas to flawless launches, Zeksta Technology seamlessly handles your website and app development, empowering you to conquer the digital world.</p>
+            <br>
+            <h6>Follow us on :</h6>
+            <div class="col-md-5 mt-5">
+                
+                <p>
+                <i class="fab fa-facebook-f icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-twitter icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-youtube icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-instagram icon"style="font-size: 30px;"></i>
+            
+                </p>
+            </div>
+
+        </div>
+        <div class="col-md-6 mt-4">    
+            <div class="row">
+                <div class="col-md-2.5">
+                    <a href="#" style="color: white;">Who we are &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">What we do &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Hire developers &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Tech we Love &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+        </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Skype ID </h6>
+                    <p>Live:zekstatech</p>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Email Us </h6>
+                    <p>solution@zeksta.com</p>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Call Us </h6>
+                    <p>+1(214)4734395  +919620390226</p>
+                </div>
+            </div>
+            <h4 class="text-white">Location</h4><br>
+            <div class="row">
+                <div class="col-md-5 text-white">
+                    <h6 style="color:white;">INDIA </h6>
+                    <p>Zeksta Technology Pvt. Ltd. 982, 4th Floor, Marvi Arcade, BTM 4th Stage, Vijaya Bank Layout, Bengaluru, Karnataka-560076</p>
+                </div>
+                <div class="col-md-5 text-white">
+                    <h6 style="color:white;">USA </h6>
+                <p>Zeksta Technology Pvt Ltd 539 W. Commerce St #3504 Dallas, TX 75208</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid" style="background-color: black;">
+    <div class="row">
+        <div class="col-md-9 text-white ">
+            <p>2017 - 2024 © All rights reserved.Zeksta Technology Pvt. Ltd.</p>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-6 text-white text-center"">
+                   <p>Sitemap &nbsp;|</p> 
+                </div>
+                <div class="col-md-6 text-white text-center""> 
+                  <p> Privacy Policy</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>        

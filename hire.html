@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .background-banner {
+      background-image: url('./img/banner0.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      color: #fff;
+    }
+    .dropdown-submenu {
+      position: relative;
+    }
+    
+    .dropdown-submenu > .dropdown-menu {
+      left: 100%;
+      /* -6px gives dropdown-menu's padding+border */
+      top: -6px;
+    }
+    
+    .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+      /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+      display: block;
+    }
+    
+    .background-banner {
+        background-image: url('./img/banner0.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        color: #fff;
+      }
+      .over{
+        position: absolute;
+        bottom: 100px;
+        margin:10px;
+        font-size: 15px;
+        color: #fff;
+      }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="home2.html"><img src="./img/zeksta-dark.svg"style="height:60px"> </a>
+            
+        </div>
+        <div class="col-md-8">
+            
+            <nav class="navbar navbar-expand-sm ">
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a>
+               -->
+                <!-- Links -->
+                <ul class="navbar-nav text-dark">
+                  
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: large;">
+                      Who we are
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-dark" href="about.html" style="font-size: large;">About Us</a>
+                      <a class="dropdown-item text-dark" href="join-us.html" style="font-size: large;">Join Us</a>
+                      
+                    </div>
+                  </li>
+                  
+                  <!-- Dropdown -->
+                  <div class="dropdown open mt-2 text-dark text-center">
+                    <a class=" dropdown-toggle text-dark" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="font-size: large;">
+                      what we do
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+                      <li class="dropdown-submenu text-dark">
+                        <a  class="text-dark" href="overview.html"style="font-size: large;padding:20px">Overview</a>
+                        
+                      </li>
+                      <li class="dropdown-submenu ">
+                        <a  class="text-dark "  href="#"style="font-size: large;padding:20px">Services</a>
+                        <ul class="dropdown-menu" style="font-size: large;padding:30px">
+                          <li><a  class="text-dark  "   href="Blockchain.html">Blockchain Development</a></li>
+                          <li><a  class="text-dark "   href="chatbot.html">Chatbot</a></li>
+                          <li><a  class="text-dark "  href="Artificial-Intelligence.html">Artificial Intelligence</a></li>
+                          <li><a  class="text-dark"   href="Internet_of_things.html">Internet of Things(IoT)</a></li>
+
+                          <li><a  class="text-dark"   href="website_development.html">Website Development</a></li>
+                          <li><a   class="text-dark"  href="mobile_application_development.html">Mobile Application Development</a></li>
+                          <li><a   class="text-dark"  href="Digital_strategy.html">Digital Strategy</a></li>
+                          <li><a    class="text-dark" href="web_design.html">Web Design</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Industries</a>
+                        <ul class="dropdown-menu " style="font-size: large;padding:30px">
+                          <li><a  class="text-dark"   href="Health_care.html">Health Care</a></li>
+                          <li><a  class="text-dark"   href="Education_E-learning.html">Education & E-Learning</E-Learning></a></li>
+                          <li><a   class="text-dark"  href="Logistics and Transportation.html">Logistics and Transportion</a></li>
+                          <li><a   class="text-dark"  href="Retails _E-commerce.html">Retails & E-Learning</a></li>
+                          <li><a   class="text-dark"  href="Business .html">Business & Finance</a></li>
+                          <li><a  class="text-dark"   href="Media_Entertainment.html">Media & Entertainment</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Approaches</a>
+                        <ul class="dropdown-menu"style="font-size:large;padding:20px">
+                          <li><a  class="text-dark"   href="approach-delivery.html">Delivery Model</a></li>
+                          <li><a  class="text-dark"   href="approach-development.html">Development Mrthodology</a></li>
+                          <li><a  class="text-dark"   href="approach-engagement.html">Engagement Models</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="hire.html"style="font-size: large;">Hire developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="blog.html"style="font-size: large;">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="teach-we.html"style="font-size: large;">Tech we Love</a>
+                  </li>
+                  <li>
+                    <a href="let.html" class="btn  ml-3 " style="color:black; border: 1px solid gray;  ">Let's Talk</a>
+                  
+                  </li>
+                    
+                </ul>
+              </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>We craft your innovative thought in the digital world</p>
+        </div>
+    </div>
+</div>
+     <!--second container-->
+     <div class="container-fluid background-banner">
+        <div class="row">
+            <div class="col-md-12  "style="margin-top:120px" >
+                <h1 class=" ml-5 " style="margin-top: 50px;">Hire Dedicated Developers</h1>
+                <p class="ml-5">RevolutionizingThe Way Apps & Softwares Are Built, Launched & Scaled</p>
+                <a href="let.html" class="btn btn-primary ml-5" style="background-color: black; border: transparent; margin-top: 20px; height: 42px; width:100px;">Let's Talk</a>
+            </div>
+            <!-- <div class="col-md-6 mb-5">
+                <img class="text-center mt-4 ml-5"  src="./img/we are hiring.jpg"height="200px" width="300px">
+            </div>
+             -->
+        </div>
+    </div>
+
+    <!--third container-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <img class="ml-5" src="./img/hire-dedicate-banner.png"style="height:300px;font-size:100px;margin-top:100px">
+            </div>
+            <div class="col-md-6 mt-5">
+                <h1>Hire Dedicated Website, App & Software Developers From India</h1>
+                <p style="font-size: 20px;">“Get full stack Agile development teams for maximum flexibility and cost effectiveness”</p>
+                <p style="font-size: 20px;">Now hire the “Zeksta finest talent” as your dedicated development team and save yourself from recruitment hassles, training and infrastructure cost. Scale up your software development capabilities with the help of our skilled and experienced developers and maximize your ROI. Choose your own team that suits your project requirements and leave the rest to us.</p>
+                <a href="let.html" class="btn btn-primary ml-2" style="background-color: black; border: transparent; margin-top: 20px; height: 42px; width:130px;">Let's Talk</a>
+            </div>
+        </div>
+    </div>
+
+<!--Fourth container-->
+<div class="container-fluid1 mt-5 text-center"><br>
+    <h2 class="text-center "style="margin-top:50px">Who you can hire from Zeksta    </h2>
+    <div class="row mt-5"style="margin:10px">
+        <div class="col-md-2">
+            <!-- <div class="card  mt-4 mb-4" style="border-radius:2rem;padding:5px ;background:whitesmoke">
+                <div class="card-body text-white text-center" > -->
+                    <img class="text-center" src="./img/th (13).jpeg" style="width: 170px;height:300px;border:1px solid black;border-radius:1rem;">
+                    <h5 class="  over">Technology Experts</h5>
+                   
+                <!-- </div>
+            </div> -->
+        </div>
+
+        <div class="col-md-2">
+            
+                    <img class="text-center" src="./img/th (8).jpeg" style="width: 170px;height:300px;border:1px solid black;border-radius:1rem;">
+                    <h5 class="over">Quality Analysts</h5>
+                   
+            
+        </div>
+
+        <div class="col-md-2">
+            
+                    <img class="text-center" src="./img/th (9).jpeg" style="width: 170px;height:300px;border:1px solid black;border-radius:1rem;">
+                    <h5 class=" over">Web Design Team</h5>
+             
+        </div>
+
+        <div class="col-md-2">
+           
+                    <img class="text-center" src="./img/Team-Management-Level-5.jpg" style="width: 170px;height:300px;border:1px solid black;border-radius:1rem;">
+                    <h5 class=" over">Management team</h5>
+             
+        </div>
+        <div class="col-md-2">
+           
+                    <img class="text-center" src="./img/th (11).jpeg" style="width: 170px;height:300px;border:1px solid black;border-radius:1rem;">
+                    <h5 class="over">Digital Marketers</h5>
+            
+        </div>
+        <div class="col-md-2">
+            
+                    <img class="text-center" src="./img/th (12).jpeg" style="width: 170px;height:300px;border:1px solid black;border-radius:1rem;">
+                    <h5 class="  over">Business analysts</h5>
+           
+        </div>
+    </div>
+</div>    
+
+
+<!--fifth container-->
+<div class="container-fluid mt-5">
+    <div class="row mt-5" style="margin:20px">
+        <div class="col-md-6 ">
+            <h1 style="margin-top: 100px;">Why hire zeksta dedicated developers</h1>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="padding:30px;border:1px solid black;border-radius:10px;background-color:aliceblue;">
+                    <img src="./img/6-Web-Designer.webp" style="height: 80px;border-radius:2rem"> 
+                    <h5>Cost effectiveness</h5>
+                    <p>By hiring our dedicated development team you save 50% of total cost by eliminating expenses such as operational cost, infrastructure cost, tools and technologies, manpower etc.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="padding:20px;border:1px solid black;border-radius:10px;background-color:aliceblue;">
+                    <img src="./img/th (9).jpeg" style="height: 80px;border-radius:2rem"> 
+                    <h5>Certified professionals</h5>
+                    <p>Certified professionals
+                        Our handpicked team of developers at zeksta are certified professionals who are well versed in various technologies and frameworks that help us provide the top quality service to our clients.</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="row mt-5" style="margin:20px">
+        <div class="col-md-6">
+            
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="padding:20px;border:1px solid black;border-radius:10px;background-color:aliceblue;">
+                    <img src="./img/full-stack.webp" style="height: 80px; border-radius:2rem"> 
+                    <h5>Quick deployment and On time delivery of projects</h5>
+                    <p>We implement proven development methodologies to ensure quick deployment and on time delivery of the end product.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="padding:20px;border:1px solid black;border-radius:10px;background-color:aliceblue;">
+                    <img src="./img/th (14).jpeg" style="height: 80px;border-radius:2rem"> 
+                    <h5>State of the art technology</h5>
+                   <p>We incorporate the latest tools and technologies to keep up with rapidly changing digital landscape and meet client expectations.</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="row mt-5" style="margin:20px">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="padding:20px;border:1px solid black;border-radius:10px;background-color:aliceblue;">
+                    <img src="./img/th (8).jpeg" style="height: 80px;border-radius:2rem"> 
+                    <h5>Transparency</h5>
+                    <p>Our dedicated developers keep you updated on the project every now and then. We connect with your in-house team to discuss challenges and steps to overcome it. We use advanced communication platforms to ensure smooth communication throughout the project</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="padding:20px;border:1px solid black;border-radius:10px;background-color:aliceblue;">
+                    <img src="./img/th (11).jpeg" style="height: 80px;border-radius:2rem"> 
+                    <h5>24/7 support and maintenance</h5>
+                    <p>Our development team provides required support through the course of the project and extends support post the project delivery.Our maintenance team ensures the delivered product is in working condition by regular testing and bug fixing. </p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<!--sixth container-->
+<div class="container-fluid mt-5 text-center">
+    <h1>Hire Dedicated Developers As Per Your Requirement</h1>
+    <div class="row mt-5 " style="margin:0px">
+        <div class="col-md-4 mt-5 " >
+            <div class="card"style="border: 1px solid black;border-radius:2rem;margin:0px;">
+                <div class="card-body">
+                    <h3 class="mt-5">Full-Time Hiring</h3>
+                    <h4>Duration</h4>
+                    <p style="font-size: large;">5 days / week</p>
+                    <p style="font-size: large;">8 hrs / day</p>
+                    <hr>
+                    <h4>Communication</h4>
+                    <p style="font-size: large;">Email, skype, Phone</p>
+                    <hr>
+                    <h4>Billing</h4>
+                    <p style="font-size: large;">Monthly</p>
+                    <hr>
+        
+                    <h4>Price</h4>
+                    <p style="font-size: large;">200000 INR / month</p>
+                    
+                    <hr>
+                    <h4>Hiring Period</h4>
+                    <p style="font-size: large;">Minimum 2 Month</p>
+                    <a href="#" class="btn btn-primary ml-3 mb-5" style="background-color: black; border: transparent; margin-top: 20px; height: 42px; width:120px;">Hire Now</a>         
+                    
+                </div>
+            </div>
+           
+        </div>
+
+
+        <div class="col-md-4 mt-5 " >
+            <div class="card"style="border: 1px solid black;border-radius:2rem;margin:0px;">
+                <div class="card-body">
+                    <h3 class="mt-5">Part Time Hiring</h3>
+                    <h4>Duration</h4>
+                    <p style="font-size: large;">5 days / week</p>
+                    <p style="font-size: large;">4 hrs / day</p>
+                    <hr>
+                    <h4>Communication</h4>
+                    <p style="font-size: large;">Email, skype, Phone</p>
+                    <hr>
+                    <h4>Billing</h4>
+                    <p style="font-size: large;">Monthly</p>
+                    <hr>
+        
+                    <h4>Price</h4>
+                    <p style="font-size: large;">45000 INR / month</p>
+                    
+                    <hr>
+                    <h4>Hiring Period</h4>
+                    <p style="font-size: large;">Minimum 1 Month</p>
+                    <a href="#" class="btn btn-primary ml-3 mb-5" style="background-color: black; border: transparent; margin-top: 20px; height: 42px; width:120px;">Hire Now</a>         
+                    
+                </div>
+            </div>
+           
+        </div>
+
+
+        <div class="col-md-4 mt-5 " >
+            <div class="card"style="border: 1px solid black;border-radius:2rem;margin:0px;">
+                <div class="card-body">
+                    <h3 class="mt-5">Hourly Hiring</h3>
+                    <h4>Duration</h4>
+                    <p style="font-size: large;">5 days / week</p>
+                    <p style="font-size: large;">Depends on hrs / day</p>
+                    <hr>
+                    <h4>Communication</h4>
+                    <p style="font-size: large;">Email, skype, Phone</p>
+                    <hr>
+                    <h4>Billing</h4>
+                    <p style="font-size: large;">Monthly</p>
+                    <hr>
+        
+                    <h4>Price</h4>
+                    <p style="font-size: large;">1200 INR / month</p>
+                    
+                    <hr>
+                    <h4>Hiring Period</h4>
+                    <p style="font-size: large;">7 Days</p>
+                    <a href="#" class="btn btn-primary ml-3 mb-5" style="background-color: black; border: transparent; margin-top: 20px; height: 42px; width:120px;">Hire Now</a>         
+                    
+                </div>
+            </div>
+           
+        </div>
+
+       
+        
+    </div>
+</div>
+
+<!--Faq part-->
+<div class="container" style="width:60%">
+  <div class="py-5 text-center">
+    <h2>Frequently asked questions</h2>
+    <p >We are trying to resolve your doubts before commencing with us. If you are still <br>left with doubts, feel free to contact us.</p>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="accordion" id="faqAccordion">
+        <!-- FAQ Item 1 -->
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                How do I choose the right developers for my project?
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+            <div class="card-body">
+              We assist you in selecting the right developers based on your project requirements. You can review the resumes and profiles of our developers, interview them, and make the selection based on your criteria. We ensure a seamless onboarding process for the dedicated developers chosen for your project.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Can I scale the team up or down based on my project requirements?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+            <div class="card-body">
+              Yes, flexibility is a key feature of our service. You can scale the dedicated development team up or down based on your project's evolving needs. We understand that project requirements may change, and we are here to accommodate those changes by adjusting the team size accordingly.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                What technologies and expertise do your dedicated developers cover?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+            <div class="card-body">
+              Our dedicated developers cover a wide range of technologies and expertise, including but not limited to web development, mobile app development, UI/UX design, backend development, frontend development, and more. We tailor the team's skills to match the specific requirements of your project.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-12">
+      <!-- FAQ Item 4 -->
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              How is communication managed between the client and the dedicated development team?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+          <div class="card-body">
+            Communication is a top priority. We facilitate regular communication through project management tools, video calls, emails, and other collaborative platforms. Dedicated developers are fully integrated into your communication channels to ensure seamless collaboration and real-time updates.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 5 -->
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              What are the billing and payment terms for hiring dedicated developers?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+          <div class="card-body">
+            Billing is typically on a monthly basis, and payment terms are discussed and agreed upon during the initial contract phase. We offer transparent and straightforward billing, making it easy for you to manage costs and track the investment in your dedicated development team.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 6 -->
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              How do you ensure the security of my project and sensitive information?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+          <div class="card-body">
+            Security is a top priority for us. We implement industry-best practices for data security and confidentiality. Our dedicated developers adhere to strict security protocols, and we can sign non-disclosure agreements (NDAs) to ensure the protection of your project and sensitive information.
+        </div>
+      </div>
+      <!-- FAQ Item 7 -->
+      <div class="card">
+        <div class="card-header" id="headingSix">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Can I get references or case studies of projects completed by your dedicated development teams?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+          <div class="card-body">
+            Certainly! We can provide references and share case studies of projects completed by our dedicated development teams. This will give you insights into our capabilities, expertise, and the successful outcomes we've achieved for our clients.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+    <!--footer part-->
+<div class="container-fluid mt-5 " style="background-color: rgb(5, 2, 18);">
+    <div class="row">
+    <div class="col-md-6  mt-4 text-white">
+        <img src="https://www.zeksta.com/zeksta-dark.svg"style="height:70px;background-color:white;"> <br>
+        <p class="mt-4">From brainstorming brilliant ideas to flawless launches, Zeksta Technology seamlessly handles your website and app development, empowering you to conquer the digital world.</p>
+        <br>
+        <h6>Follow us on :</h6>
+        <div class="col-md-5 mt-5">
+            
+            <p>
+              <i class="fab fa-facebook-f icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+              <i class="fab fa-twitter icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+              <i class="fab fa-youtube icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+              <i class="fab fa-instagram icon"style="font-size: 30px;"></i>
+        
+            </p>
+          </div>
+
+    </div>
+    <div class="col-md-6 mt-4">    
+        <div class="row">
+            <div class="col-md-2.5">
+                <a href="#" style="color: white;">Who we are &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+            <div class="col-md-2.5">
+                <a href="#" style="color:white;">What we do &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+            <div class="col-md-2.5">
+                <a href="#" style="color:white;">Hire developers &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+            <div class="col-md-2.5">
+                <a href="#" style="color:white;">Tech we Love &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+            <div class="col-md-2.5">
+                <a href="#" style="color:white;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 text-white">
+                <h6 style="color:white;">Skype ID </h6>
+                <p>Live:zekstatech</p>
+            </div>
+            <div class="col-md-3 text-white">
+                <h6 style="color:white;">Email Us </h6>
+                <p>solution@zeksta.com</p>
+            </div>
+            <div class="col-md-3 text-white">
+                <h6 style="color:white;">Call Us </h6>
+                <p>+1(214)4734395  +919620390226</p>
+            </div>
+        </div>
+        <h4 class="text-white">Location</h4><br>
+        <div class="row">
+            <div class="col-md-5 text-white">
+                <h6 style="color:white;">INDIA </h6>
+                <p>Zeksta Technology Pvt. Ltd. 982, 4th Floor, Marvi Arcade, BTM 4th Stage, Vijaya Bank Layout, Bengaluru, Karnataka-560076</p>
+            </div>
+            <div class="col-md-5 text-white">
+                <h6 style="color:white;">USA </h6>
+               <p>Zeksta Technology Pvt Ltd 539 W. Commerce St #3504 Dallas, TX 75208</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="container-fluid" style="background-color: black;">
+    <div class="row">
+        <div class="col-md-9 text-white ">
+            <p>2017 - 2024 © All rights reserved.Zeksta Technology Pvt. Ltd.</p>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-6 text-white text-center"">
+                   <p>Sitemap &nbsp;|</p> 
+                </div>
+                <div class="col-md-6 text-white text-center""> 
+                  <p> Privacy Policy</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

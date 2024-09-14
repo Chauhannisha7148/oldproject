@@ -1,25 +1,28 @@
 <?php
-$servername ="localhost";
-$username ="root";
-$password  ="";
-$dbname ="Student";
-$conn =mysqli_connect($servername,$username,$password,$dbname);
+    $servername = "localhost";
+    $username= "root";
+    $pasword = "";
+    $dbname ="kanvan";
 
-if(!$conn){
-    die("Connection failed:".mysqli_connect_errno());
-}
+    $conn = mysqli_connect($servername,$username,$pasword,$dbname);
 
-$sql  ="CREATE TABLE  user(
-name VARCHAR(30) Not Null,
-father VARCHAR(30) Not Null,
-phone VARCHAR(10) Not Null,
-email VARCHAR(40)
-)";
+    if(!$conn){
+        die("connection failed:".mysqli_connect_error());    
+    }
 
-if(mysqli_query($conn,$sql)){
-    echo "create table successfully";
-}else{
-    echo "Error ! creating:".mysqli_error($conn);
-}
-mysqli_close($conn);
+
+    $sql = "CREATE TABLE zaksta(
+    name VARCHAR (30) NOT NULL,
+    phone VARCHAR (50),
+    email VARCHAR (50),
+    project VARCHAR (30),
+    message VARCHAR (50)
+   )";
+    if(mysqli_query($conn,$sql)){
+        echo "Table Create Suceefully..";
+    }else{
+        echo "Error Creating!".mysqli_error($conn);
+    }
+
+    mysqli_query($conn);
 ?>

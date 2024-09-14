@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .background-banner {
+        background-image: url('./img/banner0.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: #fff;
+      }
+      .dropdown-submenu {
+        position: relative;
+      }
+      
+      .dropdown-submenu > .dropdown-menu {
+        left: 100%;
+        /* -6px gives dropdown-menu's padding+border */
+        top: -6px;
+      }
+      
+      .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+        /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+        display: block;
+      }
+      
+    .background-banner {
+        background-image: url('./img/background-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        color: #fff;
+      }
+      
+  </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="home2.html"><img src="./img/zeksta-dark.svg"style="height:60px"> </a>
+                
+            </div>
+            <div class="col-md-8">
+                
+                <nav class="navbar navbar-expand-sm ">
+                    <!-- Brand -->
+                    <!-- <a class="navbar-brand" href="#">Logo</a>
+                   -->
+                    <!-- Links -->
+                    <ul class="navbar-nav text-dark">
+                      
+                      <!-- Dropdown -->
+                      <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: large;">
+                          Who we are
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item text-dark" href="about.html" style="font-size: large;">About Us</a>
+                          <a class="dropdown-item text-dark" href="join-us.html" style="font-size: large;">Join Us</a>
+                          
+                        </div>
+                      </li>
+                      
+                      <!-- Dropdown -->
+                      <div class="dropdown open mt-2 text-dark text-center">
+                        <a class=" dropdown-toggle text-dark" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="font-size: large;">
+                          what we do
+                          <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+                          <li class="dropdown-submenu text-dark">
+                            <a  class="text-dark" href="overview.html"style="font-size: large;padding:20px">Overview</a>
+                            
+                          </li>
+                          <li class="dropdown-submenu ">
+                            <a  class="text-dark "  href="#"style="font-size: large;padding:20px">Services</a>
+                            <ul class="dropdown-menu" style="font-size: large;padding:30px">
+                              <li><a  class="text-dark  "   href="Blockchain.html">Blockchain Development</a></li>
+                              <li><a  class="text-dark "   href="chatbot.html">Chatbot</a></li>
+                              <li><a  class="text-dark "  href="Artificial-Intelligence.html">Artificial Intelligence</a></li>
+                              <li><a  class="text-dark"   href="Internet_of_things.html">Internet of Things(IoT)</a></li>
+
+                              <li><a  class="text-dark"   href="website_development.html">Website Development</a></li>
+                              <li><a   class="text-dark"  href="mobile_application_development.html">Mobile Application Development</a></li>
+                              <li><a   class="text-dark"  href="Digital_strategy.html">Digital Strategy</a></li>
+                              <li><a    class="text-dark" href="web_design.html">Web Design</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                            <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Industries</a>
+                            <ul class="dropdown-menu " style="font-size: large;padding:30px">
+                              <li><a  class="text-dark"   href="Health_care.html">Health Care</a></li>
+                              <li><a  class="text-dark"   href="Education_E-learning.html">Education & E-Learning</E-Learning></a></li>
+                              <li><a   class="text-dark"  href="Logistics and Transportation.html">Logistics and Transportion</a></li>
+                              <li><a   class="text-dark"  href="Retails _E-commerce.html">Retails & E-Learning</a></li>
+                              <li><a   class="text-dark"  href="Business .html">Business & Finance</a></li>
+                              <li><a  class="text-dark"   href="Media_Entertainment.html">Media & Entertainment</a></li>
+                            </ul>
+                          </li>
+                          <li class="dropdown-submenu">
+                            <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Approaches</a>
+                            <ul class="dropdown-menu"style="font-size:large;padding:20px">
+                              <li><a  class="text-dark"   href="approach-delivery.html">Delivery Model</a></li>
+                              <li><a  class="text-dark"   href="approach-development.html">Development Mrthodology</a></li>
+                              <li><a  class="text-dark"   href="approach-engagement.html">Engagement Models</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="hire.html"style="font-size: large;">Hire developers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="blog.html"style="font-size: large;">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-dark" href="teach-we.html"style="font-size: large;">Tech we Love</a>
+                      </li>
+                      <li>
+                        <a href="let.html" class="btn  ml-3 " style="color:black; border: 1px solid gray;  ">Let's Talk</a>
+                      
+                      </li>
+                        
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p>We craft your innovative thought in the digital world</p>
+            </div>
+        </div>
+    </div> 
+<!--second container-->
+<div class="container-fluid background-banner">
+    <div class="row">
+        <div class="col-md-12 mt-5  text-center" >
+            <h1 class=" ml-5 " style="margin-top: 0px;">Development Models</h1>
+            
+        </div>
+        
+    </div>
+</div> 
+<!--third container-->
+<div class="container-fluid mt-5">
+    <div class="row mt-5">
+        <div class="col-md-6 text-center">
+            <img src="./img/th (22).jpeg" width="400px">
+        </div>
+        <div class="col-md-6">
+            <h1>Our Development Process</h1>
+            <p class="mt-5">Picking the right development process is crucial for meeting defined goals and delivering results on time and within budget.
+                Zeksta technology is a software development company that converts your ideas into scalable and reliable software solutions. We at zeksta adhere to some of the well-established software development practices in order to produce the best results for your business. This enables us to provide high-quality software solutions at a reasonable cost while meeting strict deadlines. We employ the Agile software development methodology to create customized software products that are easily adaptable to the needs of your business. We specialize in Agile techniques for software development as we aim to promote a disciplined project management process.</p>
+        </div>
+    </div>
+</div>
+
+<!--fourth container-->
+<div class="container-fluid mt-5">
+    <div class="row mt-5" style="margin:20px">
+        <div class="col-md-6  mt-5">
+            <h1 style="margin-top: 0px;">Why choose Zeksta for Software development solution?</h1>
+        </div>
+        <div class="col-md-3 mt-5">
+            <div class="card">
+                <div class="card-body" style="padding:30px;border:1px solid black;border-radius:10px;background-color:aliceblue;">
+                    <img src="./img/6-Web-Designer.webp" style="height: 80px;border-radius:2rem"> 
+                    <h5>Design</h5>
+                    <p>At this stage, the software is designed according to the instructions in the ‘Requirement Specification’ document. The hardware and system requirements are defined in the design stage. This stage helps us define the overall system architecture. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mt-5">
+            <div class="card">
+                <div class="card-body" style="padding:20px;border:1px solid black;border-radius:10px;background-color:aliceblue;">
+                    <img class="mt-3" src="./img/th (9).jpeg" style="height: 80px;border-radius:2rem"> 
+                    <h5 class="mt-4">Research & Planning</h5>
+                    <p>Our software developers work with you to find out what the particular software will be used for and gather necessary information with regard to the project. Our marketing team conducts market research and competitor analysis at this point.</p>
+                    
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <div class="row mt-5" style="margin:20px">
+        <div class="col-md-6">
+            
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="padding:20px;border:1px solid black;border-radius:10px;background-color:aliceblue;">
+                    <img src="./img/full-stack.webp" style="height: 80px; border-radius:2rem"> 
+                    <h5>Testing</h5>
+                    <p>The software is tested to make sure it meets all the requirements that were determined in the first stage. Software testing such as system testing, unit testing, acceptance testing, and integration testing is carried out.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="padding:20px;border:1px solid black;border-radius:10px;background-color:aliceblue;">
+                    <img class="mt-4" src="./img/th (14).jpeg" style="height: 80px;border-radius:1rem;width:90px"> 
+                    <h5 class="mt-4">Development</h5>
+                    <p>The actual coding is done in the development stage. Our expert coders produce codes based on the design specifications. This is the longest phase in the development process</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class="row mt-5" style="margin:20px">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="padding:20px;border:1px solid black;border-radius:10px;background-color:aliceblue;">
+                    <img src="./img/th (11).jpeg" style="height: 80px;border-radius:1rem;width:90px"> 
+                    <h5 class="mt-3">Implementation & Deployment</h5>
+                    <p class="mt-3">In this phase the code is taken and put somewhere people can use such as a web server. The software is then deployed. Our development team then works with content writers to produce documentation such as user manuals.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body" style="padding:20px;border:1px solid black;border-radius:10px;background-color:aliceblue;">
+                    <img src="./img/th (8).jpeg" style="height: 80px;border-radius:1rem;width:90px"> 
+                    <h5>Maintenance</h5>
+                    <p>Once the software is released, our developers review the product to ensure that all the client requirements are met and that the software continues to perform as per the expectations. During this stage, our support team will report issues, and developers will work with testers to make improvements.</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+
+<!--footer part-->
+<div class="container-fluid mt-5 " style="background-color: rgb(5, 2, 18);">
+    <div class="row">
+    <div class="col-md-6  mt-4 text-white">
+        <img src="https://www.zeksta.com/zeksta-dark.svg"style="height:70px;background-color:white;"> <br>
+        <p class="mt-4">From brainstorming brilliant ideas to flawless launches, Zeksta Technology seamlessly handles your website and app development, empowering you to conquer the digital world.</p>
+        <br>
+        <h6>Follow us on :</h6>
+        <div class="col-md-5 mt-5">
+            
+            <p>
+              <i class="fab fa-facebook-f icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+              <i class="fab fa-twitter icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+              <i class="fab fa-youtube icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+              <i class="fab fa-instagram icon"style="font-size: 30px;"></i>
+        
+            </p>
+          </div>
+
+    </div>
+    <div class="col-md-6 mt-4">    
+        <div class="row">
+            <div class="col-md-2.5">
+                <a href="#" style="color: white;">Who we are &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+            <div class="col-md-2.5">
+                <a href="#" style="color:white;">What we do &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+            <div class="col-md-2.5">
+                <a href="#" style="color:white;">Hire developers &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+            <div class="col-md-2.5">
+                <a href="#" style="color:white;">Tech we Love &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+            <div class="col-md-2.5">
+                <a href="#" style="color:white;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 text-white">
+                <h6 style="color:white;">Skype ID </h6>
+                <p>Live:zekstatech</p>
+            </div>
+            <div class="col-md-3 text-white">
+                <h6 style="color:white;">Email Us </h6>
+                <p>solution@zeksta.com</p>
+            </div>
+            <div class="col-md-3 text-white">
+                <h6 style="color:white;">Call Us </h6>
+                <p>+1(214)4734395  +919620390226</p>
+            </div>
+        </div>
+        <h4 class="text-white">Location</h4><br>
+        <div class="row">
+            <div class="col-md-5 text-white">
+                <h6 style="color:white;">INDIA </h6>
+                <p>Zeksta Technology Pvt. Ltd. 982, 4th Floor, Marvi Arcade, BTM 4th Stage, Vijaya Bank Layout, Bengaluru, Karnataka-560076</p>
+            </div>
+            <div class="col-md-5 text-white">
+                <h6 style="color:white;">USA </h6>
+               <p>Zeksta Technology Pvt Ltd 539 W. Commerce St #3504 Dallas, TX 75208</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="container-fluid" style="background-color: black;">
+    <div class="row">
+        <div class="col-md-9 text-white ">
+            <p>2017 - 2024 © All rights reserved.Zeksta Technology Pvt. Ltd.</p>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-6 text-white text-center"">
+                   <p>Sitemap &nbsp;|</p> 
+                </div>
+                <div class="col-md-6 text-white text-center""> 
+                  <p> Privacy Policy</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>    

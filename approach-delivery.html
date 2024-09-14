@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .background-banner {
+        background-image: url('./img/banner0.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: #fff;
+      }
+      .dropdown-submenu {
+        position: relative;
+      }
+      
+      .dropdown-submenu > .dropdown-menu {
+        left: 100%;
+        /* -6px gives dropdown-menu's padding+border */
+        top: -6px;
+      }
+      
+      .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+        /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+        display: block;
+      }
+      
+    .background-banner {
+        background-image: url('./img/background-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        color: #fff; 
+      }
+      
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="home2.html"><img src="./img/zeksta-dark.svg"style="height:60px"> </a>
+            
+        </div>
+        <div class="col-md-8">
+            
+            <nav class="navbar navbar-expand-sm ">
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a>
+               -->
+                <!-- Links -->
+                <ul class="navbar-nav text-dark">
+                  
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: large;">
+                      Who we are
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-dark" href="about.html" style="font-size: large;">About Us</a>
+                      <a class="dropdown-item text-dark" href="join-us.html" style="font-size: large;">Join Us</a>
+                      
+                    </div>
+                  </li>
+                  
+                  <!-- Dropdown -->
+                  <div class="dropdown open mt-2 text-dark text-center">
+                    <a class=" dropdown-toggle text-dark" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="font-size: large;">
+                      what we do
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+                      <li class="dropdown-submenu text-dark">
+                        <a  class="text-dark" href="overview.html"style="font-size: large;padding:20px">Overview</a>
+                        
+                      </li>
+                      <li class="dropdown-submenu ">
+                        <a  class="text-dark "  href="#"style="font-size: large;padding:20px">Services</a>
+                        <ul class="dropdown-menu" style="font-size: large;padding:30px">
+                          <li><a  class="text-dark  "   href="Blockchain.html">Blockchain Development</a></li>
+                          <li><a  class="text-dark "   href="chatbot.html">Chatbot</a></li>
+                          <li><a  class="text-dark "  href="Artificial-Intelligence.html">Artificial Intelligence</a></li>
+                          <li><a  class="text-dark"   href="Internet_of_things.html">Internet of Things(IoT)</a></li>
+
+                          <li><a  class="text-dark"   href="website_development.html">Website Development</a></li>
+                          <li><a   class="text-dark"  href="mobile_application_development.html">Mobile Application Development</a></li>
+                          <li><a   class="text-dark"  href="Digital_strategy.html">Digital Strategy</a></li>
+                          <li><a    class="text-dark" href="web_design.html">Web Design</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Industries</a>
+                        <ul class="dropdown-menu " style="font-size: large;padding:30px">
+                          <li><a  class="text-dark"   href="Health_care.html">Health Care</a></li>
+                          <li><a  class="text-dark"   href="Education_E-learning.html">Education & E-Learning</E-Learning></a></li>
+                          <li><a   class="text-dark"  href="Logistics and Transportation.html">Logistics and Transportion</a></li>
+                          <li><a   class="text-dark"  href="Retails _E-commerce.html">Retails & E-Learning</a></li>
+                          <li><a   class="text-dark"  href="Business .html">Business & Finance</a></li>
+                          <li><a  class="text-dark"   href="Media_Entertainment.html">Media & Entertainment</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Approaches</a>
+                        <ul class="dropdown-menu"style="font-size:large;padding:20px">
+                          <li><a  class="text-dark"   href="approach-delivery.html">Delivery Model</a></li>
+                          <li><a  class="text-dark"   href="approach-development.html">Development Mrthodology</a></li>
+                          <li><a  class="text-dark"   href="approach-engagement.html">Engagement Models</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="hire.html"style="font-size: large;">Hire developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="blog.html"style="font-size: large;">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="teach-we.html"style="font-size: large;">Tech we Love</a>
+                  </li>
+                  <li>
+                    <a href="let.html" class="btn  ml-3 " style="color:black; border: 1px solid gray;  ">Let's Talk</a>
+                  
+                  </li>
+                    
+                </ul>
+              </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>We craft your innovative thought in the digital world</p>
+        </div>
+    </div>
+</div> 
+<!--second container-->
+<div class="container-fluid background-banner">
+    <div class="row">
+        <div class="col-md-12 mt-5  text-center" >
+            <h1 class=" ml-5 " style="margin-top: 0px;">Delivery Model</h1>
+            
+        </div>
+        
+    </div>
+</div>    
+
+<!--third container-->
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-md-6 mt-5 text-center">
+            <img src="./img/dedicated-team.jpg"width="400px">
+        </div>
+        <div class="col-md-6 mt-5">
+            <h1>Dedicated team model</h1>
+            <p class="mt-5">If you are looking to develop a web application for your company, but don't have enough time to regularly communicate with each team member, this model is for you. You can hire an entire team of dedicated developers, UI/UX designers & testers, special consultants, etc. for your project who will work as your own. In addition, a project manager will be assigned who will oversee the entire team and keep you updated on the project's progress.<br><br>
+                This model gives you the freedom to choose the team you feel most comfortable with and pay only for the resources you use or hire.</p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6 ">
+            <h1 class="ml-5">Offsite delivery model</h1>
+            <p class="ml-5 mt-5">We excel in providing the right solution through an Offsite delivery model that takes care of all the problems from the vicinity. Our team of qualified IT professionals assigned to your project provides constant support to your local needs. Our team creates a local presence and ensures faster communication with clarity.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="./img/ONSITE – OFFSITE-01 (1).png.crdownload" width="400px">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <img src="./img/hybrid_Onsite_Offshore_Delivery_banner.png" width="400px">
+        </div>
+        <div class="col-md-6">
+            <h1>Onsite delivery model</h1>
+            <p class="mt-5">In this model, we carry out the project execution on your business location. With our skilled team on your site, we ensure Onsite delivery, which takes care of all the complexities required to complete the job. Our skilled developers, quality analysts, testers, and deployment specialists ensure that your project is completed on time.</p>
+        </div>
+    </div>
+
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h1 class="ml-5">Offshore delivery model</h1>
+            <p class="mt-5 ml-5">For project development, this model allows you to have a virtual extension of your own in-house team. The OffShore Delivery module handles all of the minute details and challenges that add value to our OffShore Clients. Our offshore team communicates with the client at all stages of the project. The entire team reports directly to you so that you have unrestricted access.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="./img/shutterstock_788786236.jpg" width="400px">
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6 text-center">
+            <img src="./img/th (21).jpeg" width="400px">
+        </div>
+        <div class="col-md-6">
+            <h1>Hybrid delivery model</h1>
+            <p class="mt-5">For project development, this model allows you to have a virtual extension of your own in-house team. The OffShore Delivery module handles all of the minute details and challenges that add value to our OffShore Clients. Our offshore team communicates with the client at all stages of the project. The entire team reports directly to you so that you have unrestricted access.</p>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h1 class="ml-5">Global delivery model</h1>
+            <p class="ml-5 mt-5">This model enables you to take advantage of utilizing people and other resources from around the world, to deliver high-quality solutions under tight deadlines, with a focus on quality and risk reduction. With our Global Delivery Model, we help organizations achieve globalization. Our technical expertise enables large-scale implementation of any process, resulting in global benefits.</p>
+        </div>
+        <div class="col-md-6">
+            <img src="./img/global-delivery-model-600x462.jpg" width="400px">
+        </div>
+    </div>
+
+</div>
+
+<!--footer part-->
+<div class="container-fluid mt-5 " style="background-color: rgb(5, 2, 18);">
+    <div class="row">
+    <div class="col-md-6  mt-4 text-white">
+        <img src="https://www.zeksta.com/zeksta-dark.svg"style="height:70px;background-color:white;"> <br>
+        <p class="mt-4">From brainstorming brilliant ideas to flawless launches, Zeksta Technology seamlessly handles your website and app development, empowering you to conquer the digital world.</p>
+        <br>
+        <h6>Follow us on :</h6>
+        <div class="col-md-5 mt-5">
+            
+            <p>
+              <i class="fab fa-facebook-f icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+              <i class="fab fa-twitter icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+              <i class="fab fa-youtube icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+              <i class="fab fa-instagram icon"style="font-size: 30px;"></i>
+        
+            </p>
+          </div>
+
+    </div>
+    <div class="col-md-6 mt-4">    
+        <div class="row">
+            <div class="col-md-2.5">
+                <a href="#" style="color: white;">Who we are &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+            <div class="col-md-2.5">
+                <a href="#" style="color:white;">What we do &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+            <div class="col-md-2.5">
+                <a href="#" style="color:white;">Hire developers &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+            <div class="col-md-2.5">
+                <a href="#" style="color:white;">Tech we Love &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+            <div class="col-md-2.5">
+                <a href="#" style="color:white;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 text-white">
+                <h6 style="color:white;">Skype ID </h6>
+                <p>Live:zekstatech</p>
+            </div>
+            <div class="col-md-3 text-white">
+                <h6 style="color:white;">Email Us </h6>
+                <p>solution@zeksta.com</p>
+            </div>
+            <div class="col-md-3 text-white">
+                <h6 style="color:white;">Call Us </h6>
+                <p>+1(214)4734395  +919620390226</p>
+            </div>
+        </div>
+        <h4 class="text-white">Location</h4><br>
+        <div class="row">
+            <div class="col-md-5 text-white">
+                <h6 style="color:white;">INDIA </h6>
+                <p>Zeksta Technology Pvt. Ltd. 982, 4th Floor, Marvi Arcade, BTM 4th Stage, Vijaya Bank Layout, Bengaluru, Karnataka-560076</p>
+            </div>
+            <div class="col-md-5 text-white">
+                <h6 style="color:white;">USA </h6>
+               <p>Zeksta Technology Pvt Ltd 539 W. Commerce St #3504 Dallas, TX 75208</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="container-fluid" style="background-color: black;">
+    <div class="row">
+        <div class="col-md-9 text-white ">
+            <p>2017 - 2024 © All rights reserved.Zeksta Technology Pvt. Ltd.</p>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-6 text-white text-center"">
+                   <p>Sitemap &nbsp;|</p> 
+                </div>
+                <div class="col-md-6 text-white text-center""> 
+                  <p> Privacy Policy</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>    

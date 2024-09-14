@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .background-banner {
+        background-image: url('./img/banner0.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: #fff;
+      }
+      .dropdown-submenu {
+        position: relative;
+      }
+      
+      .dropdown-submenu > .dropdown-menu {
+        left: 100%;
+        /* -6px gives dropdown-menu's padding+border */
+        top: -6px;
+      }
+      
+      .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+        /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+        display: block;
+      }
+      
+    .background-banner {
+        background-image: url('./img/background-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: #fff; 
+      }
+      .background-banner img{
+        position: absolute;
+      }
+      .container1 {
+        position: relative;
+        color: white;
+      }
+      
+      
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="home2.html"><img src="./img/zeksta-dark.svg"style="height:60px"> </a>
+            
+        </div>
+        <div class="col-md-8">
+            
+            <nav class="navbar navbar-expand-sm ">
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a>
+               -->
+                <!-- Links -->
+                <ul class="navbar-nav text-dark">
+                  
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: large;">
+                      Who we are
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-dark" href="about.html" style="font-size: large;">About Us</a>
+                      <a class="dropdown-item text-dark" href="join-us.html" style="font-size: large;">Join Us</a>
+                      
+                    </div>
+                  </li>
+                  
+                  <!-- Dropdown -->
+                  <div class="dropdown open mt-2 text-dark text-center">
+                    <a class=" dropdown-toggle text-dark" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="font-size: large;">
+                      what we do
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+                      <li class="dropdown-submenu text-dark">
+                        <a  class="text-dark" href="overview.html"style="font-size: large;padding:20px">Overview</a>
+                        
+                      </li>
+                      <li class="dropdown-submenu ">
+                        <a  class="text-dark "  href="#"style="font-size: large;padding:20px">Services</a>
+                        <ul class="dropdown-menu" style="font-size: large;padding:30px">
+                          <li><a  class="text-dark  "   href="Blockchain.html">Blockchain Development</a></li>
+                          <li><a  class="text-dark "   href="chatbot.html">Chatbot</a></li>
+                          <li><a  class="text-dark "  href="Artificial-Intelligence.html">Artificial Intelligence</a></li>
+                          <li><a  class="text-dark"   href="Internet_of_things.html">Internet of Things(IoT)</a></li>
+
+                          <li><a  class="text-dark"   href="website_development.html">Website Development</a></li>
+                          <li><a   class="text-dark"  href="mobile_application_development.html">Mobile Application Development</a></li>
+                          <li><a   class="text-dark"  href="Digital_strategy.html">Digital Strategy</a></li>
+                          <li><a    class="text-dark" href="web_design.html">Web Design</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Industries</a>
+                        <ul class="dropdown-menu " style="font-size: large;padding:30px">
+                          <li><a  class="text-dark"   href="Health_care.html">Health Care</a></li>
+                          <li><a  class="text-dark"   href="Education_E-learning.html">Education & E-Learning</E-Learning></a></li>
+                          <li><a   class="text-dark"  href="Logistics and Transportation.html">Logistics and Transportion</a></li>
+                          <li><a   class="text-dark"  href="Retails _E-commerce.html">Retails & E-Learning</a></li>
+                          <li><a   class="text-dark"  href="Business .html">Business & Finance</a></li>
+                          <li><a  class="text-dark"   href="Media_Entertainment.html">Media & Entertainment</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Approaches</a>
+                        <ul class="dropdown-menu"style="font-size:large;padding:20px">
+                          <li><a  class="text-dark"   href="approach-delivery.html">Delivery Model</a></li>
+                          <li><a  class="text-dark"   href="approach-development.html">Development Mrthodology</a></li>
+                          <li><a  class="text-dark"   href="approach-engagement.html">Engagement Models</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="hire.html"style="font-size: large;">Hire developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="blog.html"style="font-size: large;">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="teach-we.html"style="font-size: large;">Tech we Love</a>
+                  </li>
+                  <li>
+                    <a href="let.html" class="btn  ml-3 " style="color:black; border: 1px solid gray;  ">Let's Talk</a>
+                  
+                  </li>
+                    
+                </ul>
+              </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>We craft your innovative thought in the digital world</p>
+        </div>
+    </div>
+</div>
+   <!--second container-->
+    <div class="container-fluid background-banner">
+        <div class="row">
+            <div class="col-md-12 mt-5 " >
+                <h3 class=" ml-5 " style="margin-top: 0px;">Top 7 Tech Trends for 2022</h3>
+                <h6 class="ml-5">Dec 21, 2021</h6>
+               
+                    <a href="#" class="btn btn-primary ml-5 mt-3" style="background-color: black; border: transparent; margin-top: 20px; height: 42px; width:100px;">Let's Talk</a>
+                 <h3 class=" ml-5  mt-5" style="margin-top: 0px;">Ideating + Creating + Shipping</h3>
+            </div>
+            
+        </div>
+    </div>
+ <!--third container-->
+<div class="container mt-5">
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <p>Technology is evolving rapidly thanks to the digital revolution that has led to the world-embracing technology like never before. Today many big organizations have adopted the concept of digital transformation to run their operations effectively. Due to the coronavirus pandemic, many more technologies have emerged making things a little easy in this contactless world. 
+            <br><br>   
+             There’s no denying that the number of companies going digital is rising every day. There are many players in the market providing services on the latest technologies to organizations looking to serve their customers better.  So staying up to date with the latest technology trends is crucial for your business. If you want to stand out from the crowd and beat your competitors, here are the top 9 emerging technology trends to look out for.</p>
+
+            <h5>1. Internet of Things (IoT)</h5>
+            <img src="./img/IOT.webp" width="100%" height="500px"><br>
+            <p>IoT or the Internet of Things is an emerging new technology trend. The Internet of Things is not just technical, but of social, and economic significance The Internet of Things-enabled devices like home appliances, cars, and much more can be connected to the Internet, and to each other. IoT solutions can help businesses in cutting costs while maintaining a competitive advantage. 
+            <br><br>
+            They also allow businesses to collect, monitor, and analyze data from video surveillance, social media, mobile and internet usage. IoT can be used to improve customer service and experience to identify problems and proactively resolve issues using smart grid technologies and smart meters. </p>
+
+            <h5>2. Artificial Intelligence (AI) </h5>
+            <img src="./img/artificial_intelligence.webp" width="100%" height="500px" >
+            <p>From search engine algorithms to robotics, the rapid development of Artificial Intelligence, or AI,  is showing no signs of slowing down. While science fiction often portrays AI as robots with human-like characteristics, AI is used in actually used in navigation apps, smartphone personal assistants, ride-sharing apps and so much more.<br><br>
+
+             Artificial intelligence has the potential to benefit the economy in terms of work.  People will be able to perform their tasks more effectively as a result of the use of robots and artificial intelligence. By utilizing search algorithms that provide targeted information, artificial intelligence helps users make better lifestyle decisions.</p>
+            
+             <h5>3. Robotic Process Automation (RPA)</h5>
+             <img src="./img/RPA-icons-rectangle-scaled.webp"width="100%" height="500px">
+             <p>Robotic Process Automation (RPA) continues to pique the interest of businesses for a variety of reasons. RPA technology enables a software robot to imitate human behavior. RPA not only increases your profit, but it also increases the productivity of your employees. <br><br>
+
+                RPA boosts productivity. A single RPA robot can do the work of two to five full-time employees.  You can eliminate processing errors by implementing RPA in your business. There is no risk of data leaking from one aspect to another because all data accesses are fully documented and controlled which makes RPA’s very secure. </p>
+
+             <h5>4. Virtual Reality and Augmented Reality</h5>
+             <img src="./img/th (19).jpeg"width="100%" height="500px">
+             <p>Next is the  Virtual Reality (VR) and Augmented Reality (AR), Virtual reality (VR) and augmented reality (AR) hold tremendous promise for the future of gaming, marketing, e-commerce, education, and many other fields. AR transforms the physical world into a virtual world by projecting virtual images and characters through a  phone’s camera or video viewer. 
+                <br><br>
+                Virtual reality (VR) creates an entirely computer-generated simulation of another world. This technology provides users with rich, immersive, and interactive environments. VR & AR offer personalized content to its user which adds value to the user experience.</p>
+
+             <h5>5. Blockchain</h5>
+             <img src="./img/Blockchain1.jpg"width="100%" height="500px">
+             <p>Most people associate blockchain technology with cryptocurrencies such as Bitcoin, blockchain technology has much more to offer. Blockchain technology has evolved greatly since the introduction of Bitcoin in 2008. Simply put, blockchain technology is a decentralized, distributed ledger consisting of records called blocks that are used to record transactions.
+                <br><br>
+              Because of its decentralized nature, Blockchain eliminates the need for middlemen in many processes, including payments and real estate. Unlike other record-keeping systems, blockchain is far more secure because Every new transaction is encrypted and linked to the one before it. The blockchain can also be used to verify the legitimacy of traded assets.</p>
+
+
+             <h5>6. Edge Computing</h5>
+             <img src="./img/edgecomputing.jpg"width="100%" height="500px">
+             <p>According to Wikipedia, Edge computing is a distributed computing framework that brings computation and data storage closer to the sources of data. The main goal of Edge computing is that it optimizes Internet devices and web applications. Edge computing can provide much faster response times than traditional computing. This is due to the fact that putting key processing functions closer to end-users reduces latency significantly.
+                <br><br>
+                Edge computing architecture is more resilient than centralized systems because it distributes processing tasks across the network. Due to lower bandwidth, edge computing can also result in significant cost savings. The data on the cloud can be hacked easily. This can be avoided using edge computing since edge computing only sends the relevant information to the cloud. </p>
+
+             <h5>7. 5G</h5>
+             <img src="./img/5G.webp"width="100%" height="500px">
+             <p>5G is the fifth-generation wireless technology. In comparison to 4G networks, emerging 5G networks have lower latency, higher capacity, and more bandwidth. With 5G, you’ll get unprecedented speed and connectivity, exactly what you’ll need to make self-driving cars a reality. 
+                <br><br>
+                When compared to 4G and 4G LTE, 5G is faster on phones and other devices. Users can download movies, videos, and music in seconds rather than minutes. 5G has the potential to deliver 100 times the capacity of 4G. For the first time, 5G’s low latency will provide the real-time access required for telemedicine and telesurgery, This means doctors and surgeons can treat and operate on patients hundreds or thousands of kilometers away.</p>
+            <h5>Conclusion</h5>
+            <p>New technologies emerge every year and companies need to stay updated on these technology trends to survive in this competitive world. It is also important to note that these emerging new technologies can be complex to understand and implement in your daily operations. So you need the right skills and knowledge to make the best use of them. It’s a good idea to hire a service provider who can assist you with new technology because these experts are familiar with it.
+                <br><br>
+                Zeksta technology is a leading technology development service provider in India. We provide technology services in blockchain, AI/ML, IoT, and many more. For more information on the services, visit https://zeksta.com/</p>    
+        </div>
+    </div>
+</div>
+
+ <!--footer part-->
+ <div class="container-fluid mt-5 " style="background-color: rgb(5, 2, 18);">
+    <div class="row">
+        <div class="col-md-6  mt-4 text-white">
+            <img src="https://www.zeksta.com/zeksta-dark.svg"style="height:70px;background-color:white;"> <br>
+            <p class="mt-4">From brainstorming brilliant ideas to flawless launches, Zeksta Technology seamlessly handles your website and app development, empowering you to conquer the digital world.</p>
+            <br>
+            <h6>Follow us on :</h6>
+            <div class="col-md-5 mt-5">
+                
+                <p>
+                <i class="fab fa-facebook-f icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-twitter icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-youtube icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-instagram icon"style="font-size: 30px;"></i>
+            
+                </p>
+            </div>
+
+        </div>
+        <div class="col-md-6 mt-4">    
+            <div class="row">
+                <div class="col-md-2.5">
+                    <a href="#" style="color: white;">Who we are &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">What we do &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Hire developers &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Tech we Love &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+        </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Skype ID </h6>
+                    <p>Live:zekstatech</p>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Email Us </h6>
+                    <p>solution@zeksta.com</p>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Call Us </h6>
+                    <p>+1(214)4734395  +919620390226</p>
+                </div>
+            </div>
+            <h4 class="text-white">Location</h4><br>
+            <div class="row">
+                <div class="col-md-5 text-white">
+                    <h6 style="color:white;">INDIA </h6>
+                    <p>Zeksta Technology Pvt. Ltd. 982, 4th Floor, Marvi Arcade, BTM 4th Stage, Vijaya Bank Layout, Bengaluru, Karnataka-560076</p>
+                </div>
+                <div class="col-md-5 text-white">
+                    <h6 style="color:white;">USA </h6>
+                <p>Zeksta Technology Pvt Ltd 539 W. Commerce St #3504 Dallas, TX 75208</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid" style="background-color: black;">
+    <div class="row">
+        <div class="col-md-9 text-white ">
+            <p>2017 - 2024 © All rights reserved.Zeksta Technology Pvt. Ltd.</p>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-6 text-white text-center"">
+                   <p>Sitemap &nbsp;|</p> 
+                </div>
+                <div class="col-md-6 text-white text-center""> 
+                  <p> Privacy Policy</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>                
+

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+
+    .background-banner {
+      background-image: url('./img/banner0.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: #fff;
+    }
+    .dropdown-submenu {
+      position: relative;
+    }
+    
+    .dropdown-submenu > .dropdown-menu {
+      left: 100%;
+      /* -6px gives dropdown-menu's padding+border */
+      top: -6px;
+    }
+    
+    .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+      /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+      display: block;
+    }
+    
+    /* Custom styles for banner */
+    .banner {
+        background: linear-gradient(135deg, #e25544 2.88%, #42127e 98.14%);
+      background-size: cover;
+      color: white;
+      padding: 100px 0; /* Adjust padding as needed */
+      text-align: center;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="home2.html"><img src="./img/zeksta-dark.svg"style="height:60px"> </a>
+            
+        </div>
+        <div class="col-md-8">
+            
+            <nav class="navbar navbar-expand-sm ">
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a>
+               -->
+                <!-- Links -->
+                <ul class="navbar-nav text-dark">
+                  
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: large;">
+                      Who we are
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-dark" href="about.html" style="font-size: large;">About Us</a>
+                      <a class="dropdown-item text-dark" href="join-us.html" style="font-size: large;">Join Us</a>
+                      
+                    </div>
+                  </li>
+                  
+                  <!-- Dropdown -->
+                  <div class="dropdown open mt-2 text-dark text-center">
+                    <a class=" dropdown-toggle text-dark" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="font-size: large;">
+                      what we do
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+                      <li class="dropdown-submenu text-dark">
+                        <a  class="text-dark" href="overview.html"style="font-size: large;padding:20px">Overview</a>
+                        
+                      </li>
+                      <li class="dropdown-submenu ">
+                        <a  class="text-dark "  href="#"style="font-size: large;padding:20px">Services</a>
+                        <ul class="dropdown-menu" style="font-size: large;padding:30px">
+                          <li><a  class="text-dark  "   href="Blockchain.html">Blockchain Development</a></li>
+                          <li><a  class="text-dark "   href="chatbot.html">Chatbot</a></li>
+                          <li><a  class="text-dark "  href="Artificial-Intelligence.html">Artificial Intelligence</a></li>
+                          <li><a  class="text-dark"   href="Internet_of_things.html">Internet of Things(IoT)</a></li>
+
+                          <li><a  class="text-dark"   href="website_development.html">Website Development</a></li>
+                          <li><a   class="text-dark"  href="mobile_application_development.html">Mobile Application Development</a></li>
+                          <li><a   class="text-dark"  href="Digital_strategy.html">Digital Strategy</a></li>
+                          <li><a    class="text-dark" href="web_design.html">Web Design</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Industries</a>
+                        <ul class="dropdown-menu " style="font-size: large;padding:30px">
+                          <li><a  class="text-dark"   href="Health_care.html">Health Care</a></li>
+                          <li><a  class="text-dark"   href="Education_E-learning.html">Education & E-Learning</E-Learning></a></li>
+                          <li><a   class="text-dark"  href="Logistics and Transportation.html">Logistics and Transportion</a></li>
+                          <li><a   class="text-dark"  href="Retails _E-commerce.html">Retails & E-Learning</a></li>
+                          <li><a   class="text-dark"  href="Business .html">Business & Finance</a></li>
+                          <li><a  class="text-dark"   href="Media_Entertainment.html">Media & Entertainment</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Approaches</a>
+                        <ul class="dropdown-menu"style="font-size:large;padding:20px">
+                          <li><a  class="text-dark"   href="approach-delivery.html">Delivery Model</a></li>
+                          <li><a  class="text-dark"   href="approach-development.html">Development Mrthodology</a></li>
+                          <li><a  class="text-dark"   href="approach-engagement.html">Engagement Models</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="hire.html"style="font-size: large;">Hire developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="blog.html"style="font-size: large;">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="teach-we.html"style="font-size: large;">Tech we Love</a>
+                  </li>
+                  <li>
+                    <a href="let.html" class="btn  ml-3 " style="color:black; border: 1px solid gray;  ">Let's Talk</a>
+                  
+                  </li>
+                    
+                </ul>
+              </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>We craft your innovative thought in the digital world</p>
+        </div>
+    </div>
+</div>
+<!--second container-->
+  <div class="container-fluid banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mt-5">
+          <h1 style="text-align: left;">Website Development Service</h1>
+          <p style="text-align: left; margin-top: 20px;">Zeksta Technologies provides its clients with the best web development services. We<br> work with in-house experts to address a wide range of client requirements. We have <br>years of experience creating user-friendly and visually appealing websites. Choose us <br>today for rapid website development with enhanced features.
+
+
+
+          </p>
+          <a href="#" class="btn btn-primary" style="margin-right: 620px; margin-top: 20px; background-color: black; border: transparent; width: 120px;">Let's Talk</a>
+        </div>
+        <div class="col-md-4">
+          <img src="https://www.zeksta.com/_next/static/media/website-banner.91411e22.svg" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" style="margin-top: 100px;">
+        <img src="https://www.zeksta.com/_next/static/media/website-develop.115e72a9.svg" class="img-fluid" alt="Image">
+      </div>
+      <div class="col-md-8">
+        <h2 style="margin-top: 100px;">Why website for your business</h2>
+        <p style="margin-top: 30px;">We are inquisitive creatures who seek and consume information daily. In this digital age,<br> technology makes it easier to access information and nothing is more convenient than a <br>website that provides a wealth of information about a company or a product.
+<br><br>
+A website is an essential component of any business’s marketing strategy. Your website is<br> essentially your online brand. According to studies, the average consumer decides after<br> visiting a website. There are numerous businesses with websites out there, and for your <br>business to stand out, it must reach your target audience. They must be able to see your<br> brand and hear your voice. All of this is made possible by website development. A website, <br>like an eye, is a window to your business, giving potential customers a taste of what you have <br>to offer while leaving them wanting more from your company.
+
+</p>
+        <a href="#" class="btn btn-primary mt-3" style="background-color: black; width: 150px; border-radius: 10px; border: transparent;">Let's Talk</a>
+      </div>
+    </div>
+  </div><br><br>
+  <div class="container">
+    <div class="row">
+     
+      <div class="col-md-8">
+        <h2 style="margin-top: 100px;">Why invest in professional website <br>development services?</h2>
+        <p style="margin-top: 30px;">In today’s competitive online market, any business must have a well-developed website.<br><br>
+
+          A website serves as a link between your company and its target audience. Your website<br> should not only promote your company, but it should also provide an unforgettable<br> experience.<br><br>
+          
+          You don’t want to risk losing potential customers because your website isn’t professionally<br> designed.<br><br>
+          
+          You can’t just leave it to chance and miss out on the advantages that a website can provide.
+          
+          Why Invest
+          
+</p>
+        <a href="#" class="btn btn-primary mt-3" style="background-color: black; width: 150px; border-radius: 10px; border: transparent;">Let's Talk</a>
+      </div>
+      <div class="col-md-4" style="margin-top: 150px;">
+        <img src="https://www.zeksta.com/_next/static/media/website-invest.797a2b4b.svg" class="img-fluid" alt="Image" height="500px">
+      </div>
+    </div>
+  </div><br><br>
+  <div class="container-fluid " style="background-color: black;">
+    
+    <div class="row">
+      <div class="col-md-12 text-center mt-5">
+        <h1 style="color: white;">Our Expertise</h1>
+      </div>
+    </div><br>
+    <div class="row mt-4 ">
+      <!-- First Column with Card -->
+      <div class="col-md-4 mb-5">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/static/media/website-exp1.0b6ce2db.svg" class="card-img-top" alt="Website Development" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white; ">
+            <h4 class="card-title text-left" style="color:black; ">Custom websites</h4>
+            <p class="card-text" style="color: black; padding-top: 20px;">
+              Custom website development is the process of designing and developing a website while keeping your b...
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Second Column with Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/static/media/website-exp5.1e82b439.svg" class="card-img-top" alt="UI/UX" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white;">
+            <h4 class="card-title text-left" style="color:black; ">PHP website</h4>
+            <p class="card-text" style="color:black; padding-top: 20px;">
+              It is a server-side programming language that is used by web developers all over the world. Because ...
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Third Column with Card -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.zeksta.com/_next/static/media/website-exp2.5e183c0c.svg" class="card-img-top" alt="Mobile App Development" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+          <div class="card-body" style="background-color:white;">
+            <h4 class="card-title text-left" style="color: black;">CMS website</h4>
+            <p class="card-text" style="color: black; padding-top: 20px;">
+              A CMS platform (content management system platform) is a piece of software that allows you to manage...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <!-- Left Column with Heading -->
+      <div class="col-md-5" style="margin-top: 150px;">
+        <h2>Why choose zeksta as your partner for Website development services?</h2>
+      </div>
+  
+      <!-- Right Column with Two Rows -->
+      <div class="col-md-7" style="margin-top: 100px;">
+        <div class="row">
+          <!-- First Row - First Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/blockchain-why1.93cde3af.svg" class="card-img-top" alt="Image 1" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title">User friendly</h5>
+                <p class="card-text">A visitor will most likely leave your website if it takes more than 3 seconds to load a page. 47% of.</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- First Row - Second Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/blockchain-why2.75130949.svg" class="card-img-top" alt="Image 2" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title">Better search engine ranking</h5>
+                <p class="card-text">When looking for a specific business or service, a user is more likely to choose a website that appe...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <!-- Second Row - First Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/blockchain-why3.2a57e022.svg" class="card-img-top" alt="Image 3" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title">The first impression</h5>
+                <p class="card-text">Any visitor to your website will only stay if he finds the design and content of your website appeal..</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Second Row - Second Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/blockchain-why4.d1b37b1d.svg" class="card-img-top" alt="Image 4"style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title">Responsive web design</h5>
+                <p class="card-text">People nowadays use their smartphones or tablets to access the internet. People want to find informa...
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- third Row - First Column -->
+          <div class="col-md-6">
+            <div class="card mb-4" style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+            border-radius: 20px;
+            box-sizing: border-box;
+        ">
+              <img src="https://www.zeksta.com/_next/static/media/blockchain-why3.2a57e022.svg" class="card-img-top" alt="Image 3" style="width: 60px; height: 60px; margin-left: 20px; margin-top: 30px;">
+              <div class="card-body">
+                <h5 class="card-title">Stay ahead of your competition</h5>
+                <p class="card-text">If a user has a bad user experience, he or she will choose your competitors over you. You will be in....</p>
+              </div>
+            </div>
+          </div>
+  
+          <
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-12 text-center">
+        <h2>Tech We Love</h2>
+        <p style="margin-top: 20px;">Discovering and Celebrating the Best in Technology.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center mt-3">
+        <p>
+          <a href="#" class="btn " style="border: 1px solid black; background-color: black; color: aliceblue;">Top</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Web</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Mobile</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Backend</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Design</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Database</a>
+          <a href="#" class="btn " style="border: 1px solid black;">DevOps & Cloud</a>
+          <a href="#" class="btn" style="border: 1px solid black;">QA</a>
+          <a href="#" class="btn " style="border: 1px solid black;">Blockchain</a>
+          <a href="#" class="btn" style="border: 1px solid black;">Salesforce</a>
+        </p>
+      </div>
+    </div>
+    </div><br><br>
+    <div class="container " style="    background: radial-gradient(circle at 100% 100%, #fff 0, #fff 15px, transparent 0) 0 0 / 20px 20px no-repeat, radial-gradient(circle at 0 100%, #fff 0, #fff 15px, transparent 0) 100% 0 / 20px 20px no-repeat, radial-gradient(circle at 100% 0, #fff 0, #fff 15px, transparent 0) 0 100% / 20px 20px no-repeat, radial-gradient(circle at 0 0, #fff 0, #fff 15px, transparent 0) 100% 100% / 20px 20px no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 10px) calc(100% - 40px) no-repeat, linear-gradient(#fff, #fff) 50% 50% / calc(100% - 40px) calc(100% - 10px) no-repeat, linear-gradient(315deg, transparent 75%, #44bcff), linear-gradient(135deg, transparent 75%, #ff675e);
+    border-radius: 20px;
+    box-sizing: border-box;
+"><br>
+      <div class="row mt-5">
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fangular.webp&w=96&q=75" class="card-img-top" alt="Card Image 1" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Freact.webp&w=96&q=75" class="card-img-top" alt="Card Image 2" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fvue.webp&w=96&q=75" class="card-img-top" alt="Card Image 3" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/typescript.svg" class="card-img-top" alt="Card Image 4" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fnextjs.webp&w=48&q=75" class="card-img-top" alt="Card Image 5" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/nuxtjs.svg" class="card-img-top" alt="Card Image 6" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fflutter.webp&w=96&q=75" class="card-img-top" alt="Card Image 7" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/nodejs.svg" class="card-img-top" alt="Card Image 8" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-5">
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/nestjs.svg" class="card-img-top" alt="Card Image 1" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fgraphql.webp&w=96&q=75" class="card-img-top" alt="Card Image 2" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Ffirebase.webp&w=48&q=75" class="card-img-top" alt="Card Image 3" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Flaravel.webp&w=48&q=75" class="card-img-top" alt="Card Image 4" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/codeigniter.svg" class="card-img-top" alt="Card Image 5" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fror.webp&w=48&q=75" class="card-img-top" alt="Card Image 6" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fjava.webp&w=48&q=75" class="card-img-top" alt="Card Image 7" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fpython.webp&w=48&q=75" class="card-img-top" alt="Card Image 8" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-5">
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fgolang.webp&w=96&q=75" class="card-img-top" alt="Card Image 1" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Ffigma.webp&w=96&q=75" class="card-img-top" alt="Card Image 2" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fmy_sql.webp&w=96&q=75" class="card-img-top" alt="Card Image 3" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/mongodb.svg" class="card-img-top" alt="Card Image 4" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/postgres.svg" class="card-img-top" alt="Card Image 5" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fredis.webp&w=96&q=75" class="card-img-top" alt="Card Image 6" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/aws.svg" class="card-img-top" alt="Card Image 7" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fheroku.webp&w=96&q=75" class="card-img-top" alt="Card Image 8" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-5">
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/images/technologies/docker.svg" class="card-img-top" alt="Card Image 1" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fmocha.webp&w=96&q=75" class="card-img-top" alt="Card Image 2" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fchai.webp&w=96&q=75" class="card-img-top" alt="Card Image 3" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fweb3js.webp&w=48&q=75" class="card-img-top" alt="Card Image 4" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fs-cpq.webp&w=48&q=75" class="card-img-top" alt="Card Image 5" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+        <div class="col-md-1.5">
+          <div class="card mb-4 ml-5">
+            <img src="https://www.zeksta.com/_next/image?url=%2Fimages%2Ftechnologies%2Fs-li-mi.webp&w=48&q=75" class="card-img-top" alt="Card Image 6" style="height: 75px; width: 75px;padding: 5px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2>Frequently asked questions</h2>
+        <p >We are trying to resolve your doubts before commencing with us. If you are still <br>left with doubts, feel free to contact us.</p>
+      </div>
+    
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="accordion" id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How long will it take to design a website?
+                  </button>
+                </h5>
+              </div>
+    
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.Depends on the requirement. A typical website will take at least 15 weeks from start to launch.
+                </div>
+              </div>
+            </div>
+    
+            <!-- FAQ Item 2 -->
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What photo, graphic, and text formats should I use for my website?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                <div class="card-body">
+                  It’s highly recommended to use HD images, It can be a JPG or a PNG format.
+                </div>
+              </div>
+            </div>
+    
+            <!-- FAQ Item 3 -->
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Do I need a database for my website?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                <div class="card-body">
+                  Yes. For a dynamic website, a database is a must. A database can store a wide range of digital information that can be accessed later on. For instance, when a user fills up the sign-up form, his email, password and other information entered in the form will be stored in the database. This will let the same user login easily the next time without having to enter the details again.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-lg-12">
+          <!-- FAQ Item 4 -->
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Will my website be search engine friendly?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqAccordion">
+              <div class="card-body">
+                Yes. Search engines crawl each page of the website so that they can serve relevant and valuable content to their user based on the topics they search for. Our team of SEO experts makes sure your website is search engine friendly by implementing SEO strategies like On-page & off-page techniques, Keyword optimization, SEO-friendly content, white hat techniques, etc. Although this process will take time, you can rest assured that your website is well-groomed to make it more appealing to the search engines and will rank better in search results and drive more traffic to your website.
+
+
+              </div>
+            </div>
+          </div>
+    
+          <!-- FAQ Item 5 -->
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  How do I update my website?
+
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+              <div class="card-body">
+                Our team can help you make sure everything in your website is up to date by reviewing your website design, updating keywords, evaluating your competitor’s website, performing A/B testing, checking your analytics, and creating new content.
+              </div>
+            </div>
+          </div>
+    
+          <!-- FAQ Item 6 -->
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  When can I update my website content?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+              <div class="card-body">
+                When you feel your website is outdated or if it is not serving the purpose. You can opt for updating website content.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ <!--footer part-->
+ <div class="container-fluid mt-5 " style="background-color: rgb(5, 2, 18);">
+  <div class="row">
+  <div class="col-md-6  mt-4 text-white">
+      <img src="https://www.zeksta.com/zeksta-dark.svg"style="height:70px;background-color:white;"> <br>
+      <p class="mt-4">From brainstorming brilliant ideas to flawless launches, Zeksta Technology seamlessly handles your website and app development, empowering you to conquer the digital world.</p>
+      <br>
+      <h6>Follow us on :</h6>
+      <div class="col-md-5 mt-5">
+          
+          <p>
+            <i class="fab fa-facebook-f icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-twitter icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-youtube icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+            <i class="fab fa-instagram icon"style="font-size: 30px;"></i>
+      
+          </p>
+        </div>
+
+  </div>
+  <div class="col-md-6 mt-4">    
+      <div class="row">
+          <div class="col-md-2.5">
+              <a href="#" style="color: white;">Who we are &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">What we do &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Hire developers &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Tech we Love &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+          <div class="col-md-2.5">
+              <a href="#" style="color:white;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+          </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Skype ID </h6>
+              <p>Live:zekstatech</p>
+          </div>
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Email Us </h6>
+              <p>solution@zeksta.com</p>
+          </div>
+          <div class="col-md-3 text-white">
+              <h6 style="color:white;">Call Us </h6>
+              <p>+1(214)4734395  +919620390226</p>
+          </div>
+      </div>
+      <h4 class="text-white">Location</h4><br>
+      <div class="row">
+          <div class="col-md-5 text-white">
+              <h6 style="color:white;">INDIA </h6>
+              <p>Zeksta Technology Pvt. Ltd. 982, 4th Floor, Marvi Arcade, BTM 4th Stage, Vijaya Bank Layout, Bengaluru, Karnataka-560076</p>
+          </div>
+          <div class="col-md-5 text-white">
+              <h6 style="color:white;">USA </h6>
+             <p>Zeksta Technology Pvt Ltd 539 W. Commerce St #3504 Dallas, TX 75208</p>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid" style="background-color: black;">
+  <div class="row">
+      <div class="col-md-9 text-white ">
+          <p>2017 - 2024 © All rights reserved.Zeksta Technology Pvt. Ltd.</p>
+      </div>
+      <div class="col-md-3">
+          <div class="row">
+              <div class="col-md-6 text-white text-center"">
+                 <p>Sitemap &nbsp;|</p> 
+              </div>
+              <div class="col-md-6 text-white text-center""> 
+                <p> Privacy Policy</p> 
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+   
+       
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body></html>

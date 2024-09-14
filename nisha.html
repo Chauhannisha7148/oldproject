@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        .dropdown-submenu {
+            position: relative;
+          }
+          
+          .dropdown-submenu > .dropdown-menu {
+            left: 100%;
+            /* -6px gives dropdown-menu's padding+border */
+            top: -6px;
+          }
+          
+          .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+            /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+            display: block;
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="dropdown open">
+        <a class=" dropdown-toggle" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown trigger
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+          <li class="dropdown-submenu">
+            <a href="#">Action 1</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level</a></li>
+              <li><a href="#">3rd level</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-submenu">
+            <a href="#">Action 2</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level B</a></li>
+              <li><a href="#">3rd level B</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

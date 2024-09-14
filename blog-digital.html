@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .background-banner {
+        background-image: url('./img/banner0.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: #fff;
+      }
+      .dropdown-submenu {
+        position: relative;
+      }
+      
+      .dropdown-submenu > .dropdown-menu {
+        left: 100%;
+        /* -6px gives dropdown-menu's padding+border */
+        top: -6px;
+      }
+      
+      .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+        /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+        display: block;
+      }
+      
+    .background-banner {
+        background-image: url('./img/background-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: #fff; 
+      }
+      .background-banner img{
+        position: absolute;
+      }
+      .container1 {
+        position: relative;
+        color: white;
+      }
+      
+      
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="home2.html"><img src="./img/zeksta-dark.svg"style="height:60px"> </a>
+            
+        </div>
+        <div class="col-md-8">
+            
+            <nav class="navbar navbar-expand-sm ">
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a>
+               -->
+                <!-- Links -->
+                <ul class="navbar-nav text-dark">
+                  
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: large;">
+                      Who we are
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-dark" href="about.html" style="font-size: large;">About Us</a>
+                      <a class="dropdown-item text-dark" href="join-us.html" style="font-size: large;">Join Us</a>
+                      
+                    </div>
+                  </li>
+                  
+                  <!-- Dropdown -->
+                  <div class="dropdown open mt-2 text-dark text-center">
+                    <a class=" dropdown-toggle text-dark" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="font-size: large;">
+                      what we do
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+                      <li class="dropdown-submenu text-dark">
+                        <a  class="text-dark" href="overview.html"style="font-size: large;padding:20px">Overview</a>
+                        
+                      </li>
+                      <li class="dropdown-submenu ">
+                        <a  class="text-dark "  href="#"style="font-size: large;padding:20px">Services</a>
+                        <ul class="dropdown-menu" style="font-size: large;padding:30px">
+                          <li><a  class="text-dark  "   href="Blockchain.html">Blockchain Development</a></li>
+                          <li><a  class="text-dark "   href="chatbot.html">Chatbot</a></li>
+                          <li><a  class="text-dark "  href="Artificial-Intelligence.html">Artificial Intelligence</a></li>
+                          <li><a  class="text-dark"   href="Internet_of_things.html">Internet of Things(IoT)</a></li>
+
+                          <li><a  class="text-dark"   href="website_development.html">Website Development</a></li>
+                          <li><a   class="text-dark"  href="mobile_application_development.html">Mobile Application Development</a></li>
+                          <li><a   class="text-dark"  href="Digital_strategy.html">Digital Strategy</a></li>
+                          <li><a    class="text-dark" href="web_design.html">Web Design</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Industries</a>
+                        <ul class="dropdown-menu " style="font-size: large;padding:30px">
+                          <li><a  class="text-dark"   href="Health_care.html">Health Care</a></li>
+                          <li><a  class="text-dark"   href="Education_E-learning.html">Education & E-Learning</E-Learning></a></li>
+                          <li><a   class="text-dark"  href="Logistics and Transportation.html">Logistics and Transportion</a></li>
+                          <li><a   class="text-dark"  href="Retails _E-commerce.html">Retails & E-Learning</a></li>
+                          <li><a   class="text-dark"  href="Business .html">Business & Finance</a></li>
+                          <li><a  class="text-dark"   href="Media_Entertainment.html">Media & Entertainment</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Approaches</a>
+                        <ul class="dropdown-menu"style="font-size:large;padding:20px">
+                          <li><a  class="text-dark"   href="approach-delivery.html">Delivery Model</a></li>
+                          <li><a  class="text-dark"   href="approach-development.html">Development Mrthodology</a></li>
+                          <li><a  class="text-dark"   href="approach-engagement.html">Engagement Models</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="hire.html"style="font-size: large;">Hire developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="blog.html"style="font-size: large;">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="teach-we.html"style="font-size: large;">Tech we Love</a>
+                  </li>
+                  <li>
+                    <a href="let.html" class="btn  ml-3 " style="color:black; border: 1px solid gray;  ">Let's Talk</a>
+                  
+                  </li>
+                    
+                </ul>
+              </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>We craft your innovative thought in the digital world</p>
+        </div>
+    </div>
+</div>
+   <!--second container-->
+    <div class="container-fluid background-banner">
+        <div class="row">
+            <div class="col-md-12 mt-5 " >
+                <h3 class=" ml-5 " style="margin-top: 0px;">Digital strategy and consultation | A quick guide for every business owner</h3>
+                <h6 class="ml-5">Sep 21, 2021</h6>
+               
+                    <a href="#" class="btn btn-primary ml-5 mt-3" style="background-color: black; border: transparent; margin-top: 20px; height: 42px; width:100px;">Let's Talk</a>
+                 <h3 class=" ml-5  mt-5" style="margin-top: 0px;">Ideating + Creating + Shipping</h3>
+            </div>
+            
+        </div>
+    </div>
+<!--third container--> 
+<div class="container mt-5">
+    <div class="row mt-5">
+        <div class="col-md-12 mt-5">
+            <img src="./img/th (17).jpeg"width="100%" height="500px">
+            <p class="mt-5">Are you looking for a way to maximize your business profits? Are you looking to boost business growth and expand your customer base? Then <strong>digital strategy</strong>  is the way to go.</p>
+            <h5>What is digital strategy?</h5>
+            <p>“A digital strategy is a plan of action aimed at achieving business objectives through the implementation of digital initiatives.” 
+                <br><br>
+                Digital strategy is becoming increasingly popular as a result of digital transformation. Digital strategy focuses on leveraging technology to improve business performance, whether by developing new products or reimagining existing ones. 
+                <br><br>
+                <strong>The primary goal of digital strategy is  to</strong> 
+                <br><br>
+                Assist companies and organizations in achieving their innovation and digital transformation goals as efficiently as possible.
+                <br><br>Help stay competitive in the market by utilizing digital channels and information technology. <br><br>
+                <b>Digital consulting services</b> play an important role that is frequently undervalued. It’s common for businesses to think of them as something only large corporations need or can afford. Digital strategy consulting helps identify<b>new technologies </b> and<b>strategies</b>  that help your business transform digitally. <br><br>
+                Here are 5 ways how digital strategy consulting services can benefit your business.
+            </p>
+            <h5>1. Optimize cost and reduce risks </h5>
+            <p>Implementing a digital strategy in your business is ideal if you want to have a practical business model. It can lower the costs of machines and services, allowing you to save more money. <br><br>
+
+                Many businesses and organizations, particularly those that have been involved in digitalization for some time, invest in digital business consulting services in order to maximize their efforts and reduce costs. Companies choose different strategies to minimize risks and optimize costs. </p>
+            <h5>2. Increase efficiency and margins</h5>
+            <p>Incorporating a digital strategy into your business can help maximize your operational efficiency. With the help of digital strategy consultants, you can leverage cutting-edge digital tools to provide precise and timely communication for your company. 
+                <br><br>
+                Digital consulting also streamlines client communication. This helps in maintaining a long-lasting relationship with the clients as it provides higher value. If your clients are satisfied, this will result in higher profit margins. They will refer your company and services to their friends and family members. This means more business and more revenue.</p>
+            <h5>3. Digital intelligence</h5>
+            <p>Data plays a critical role in the success of any business. Digital consultants assist businesses in maximizing the value of their data, integrating data solutions, gaining valuable insights, and improving overall decision making.
+
+                Digital strategy consultants help organizations develop a data strategy that is aligned with their business objectives. They assist in defining what data has potential, understanding how to work with it, and determining who should be in charge.
+                
+                Furthermore, digital consultants are well versed in digital tools that are necessary to transform raw data into insights that will greatly benefit the company during the decision-making process.</p>
+            <h5>4. Stay ahead of competitors</h5>
+            <p>The reason why many companies embrace digital transformation is to stay ahead of their competitors. There’s no denying that adopting new technologies will help you stay competitive as a business. The more you rely on digital technology to serve your clients, the more likely your business is to succeed. This is because we live in a digital age and the world has gone digital.
+                <br><br>
+                Digital strategy consultants design strategies to cater to this modern world. This involves making your website mobile-friendly, optimizing your website using a search engine optimization strategy, running social media campaigns to reach a large audience. Hiring a digital strategy consultant will help you achieve all these goals and will help you stay competitive.</p>
+            <h5>5. Provide better user experience</h5>
+            <p>The role of user experience is often underestimated by many businesses. Better user experience means better conversion, customer engagement, and retention. Digital consultants know this better. They combine best design practices, trends, technology and create a tailored UX design strategy to build a better digital service or product. They also monitor customer behavioral patterns by performing deep customer analysis and study customer journeys.  </p>
+            <h5>Reap the benefits from  your investments</h5>
+            <p>The goal of every business owner is to ensure all their investments pay off. Many companies face financial losses due to bad investments.
+                <br><br>
+                Digital strategy consultants won’t let that happen to you. They ensure that your investment doesn’t go in vain. Digital strategy consultants map out a strategic plan so that you can invest your time and money in the right tools.  You will receive a high value in exchange for a short period of time. They look out for changes and trends in the market that will benefit you in the long run.</p>
+            <h5>Final thoughts</h5>
+            <p>The benefits of Digital strategy consulting services far outweigh the hiring costs. Their services will make you stay competitive in your field, gain new partnerships, increase profit margins, and maximize operational efficiency. They will guide you in transforming your business digitally every step of the way.
+
+                The demand for digital strategy consultants will only grow in the coming years. It is wise for businesses to capitalize on the skills and expertise of digital consultants to grow their business and achieve the desired result. 
+                
+                At Zeksta, we help companies serve their customers and provide the best-in-class services by leveraging effective digital strategies and transform their business digitally to stay in line with the evolving market. 
+                
+                If you are looking for an experienced digital strategy consulting and software development company, get in touch with us today.</p>
+        </div>
+    </div>
+</div>   
+
+<!--footer part-->
+<div class="container-fluid mt-5 " style="background-color: rgb(5, 2, 18);">
+    <div class="row">
+        <div class="col-md-6  mt-4 text-white">
+            <img src="https://www.zeksta.com/zeksta-dark.svg"style="height:70px;background-color:white;"> <br>
+            <p class="mt-4">From brainstorming brilliant ideas to flawless launches, Zeksta Technology seamlessly handles your website and app development, empowering you to conquer the digital world.</p>
+            <br>
+            <h6>Follow us on :</h6>
+            <div class="col-md-5 mt-5">
+                
+                <p>
+                <i class="fab fa-facebook-f icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-twitter icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-youtube icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-instagram icon"style="font-size: 30px;"></i>
+            
+                </p>
+            </div>
+
+        </div>
+        <div class="col-md-6 mt-4">    
+            <div class="row">
+                <div class="col-md-2.5">
+                    <a href="#" style="color: white;">Who we are &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">What we do &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Hire developers &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Tech we Love &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+        </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Skype ID </h6>
+                    <p>Live:zekstatech</p>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Email Us </h6>
+                    <p>solution@zeksta.com</p>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Call Us </h6>
+                    <p>+1(214)4734395  +919620390226</p>
+                </div>
+            </div>
+            <h4 class="text-white">Location</h4><br>
+            <div class="row">
+                <div class="col-md-5 text-white">
+                    <h6 style="color:white;">INDIA </h6>
+                    <p>Zeksta Technology Pvt. Ltd. 982, 4th Floor, Marvi Arcade, BTM 4th Stage, Vijaya Bank Layout, Bengaluru, Karnataka-560076</p>
+                </div>
+                <div class="col-md-5 text-white">
+                    <h6 style="color:white;">USA </h6>
+                <p>Zeksta Technology Pvt Ltd 539 W. Commerce St #3504 Dallas, TX 75208</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid" style="background-color: black;">
+    <div class="row">
+        <div class="col-md-9 text-white ">
+            <p>2017 - 2024 © All rights reserved.Zeksta Technology Pvt. Ltd.</p>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-6 text-white text-center"">
+                   <p>Sitemap &nbsp;|</p> 
+                </div>
+                <div class="col-md-6 text-white text-center""> 
+                  <p> Privacy Policy</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>                
+

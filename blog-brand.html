@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .background-banner {
+        background-image: url('./img/banner0.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: #fff;
+      }
+      .dropdown-submenu {
+        position: relative;
+      }
+      
+      .dropdown-submenu > .dropdown-menu {
+        left: 100%;
+        /* -6px gives dropdown-menu's padding+border */
+        top: -6px;
+      }
+      
+      .dropdown-submenu:hover > .dropdown-menu, .dropdown-submenu > a:focus + .dropdown-menu {
+        /* :focus support is incomplete - pressing Tab sets focus to submenu, but that immediately hides submenu */
+        display: block;
+      }
+      
+    .background-banner {
+        background-image: url('./img/background-banner.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: #fff; 
+      }
+      .background-banner img{
+        position: absolute;
+      }
+      .container1 {
+        position: relative;
+        color: white;
+      }
+      
+      
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <a href="home2.html"><img src="./img/zeksta-dark.svg"style="height:60px"> </a>
+            
+        </div>
+        <div class="col-md-8">
+            
+            <nav class="navbar navbar-expand-sm ">
+                <!-- Brand -->
+                <!-- <a class="navbar-brand" href="#">Logo</a>
+               -->
+                <!-- Links -->
+                <ul class="navbar-nav text-dark">
+                  
+                  <!-- Dropdown -->
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbardrop" data-toggle="dropdown" style="font-size: large;">
+                      Who we are
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-dark" href="about.html" style="font-size: large;">About Us</a>
+                      <a class="dropdown-item text-dark" href="join-us.html" style="font-size: large;">Join Us</a>
+                      
+                    </div>
+                  </li>
+                  
+                  <!-- Dropdown -->
+                  <div class="dropdown open mt-2 text-dark text-center">
+                    <a class=" dropdown-toggle text-dark" id=""  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"style="font-size: large;">
+                      what we do
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu multi-level" aria-labelledby="dLabel">
+                      <li class="dropdown-submenu text-dark">
+                        <a  class="text-dark" href="overview.html"style="font-size: large;padding:20px">Overview</a>
+                        
+                      </li>
+                      <li class="dropdown-submenu ">
+                        <a  class="text-dark "  href="#"style="font-size: large;padding:20px">Services</a>
+                        <ul class="dropdown-menu" style="font-size: large;padding:30px">
+                          <li><a  class="text-dark  "   href="Blockchain.html">Blockchain Development</a></li>
+                          <li><a  class="text-dark "   href="chatbot.html">Chatbot</a></li>
+                          <li><a  class="text-dark "  href="Artificial-Intelligence.html">Artificial Intelligence</a></li>
+                          <li><a  class="text-dark"   href="Internet_of_things.html">Internet of Things(IoT)</a></li>
+
+                          <li><a  class="text-dark"   href="website_development.html">Website Development</a></li>
+                          <li><a   class="text-dark"  href="mobile_application_development.html">Mobile Application Development</a></li>
+                          <li><a   class="text-dark"  href="Digital_strategy.html">Digital Strategy</a></li>
+                          <li><a    class="text-dark" href="web_design.html">Web Design</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Industries</a>
+                        <ul class="dropdown-menu " style="font-size: large;padding:30px">
+                          <li><a  class="text-dark"   href="Health_care.html">Health Care</a></li>
+                          <li><a  class="text-dark"   href="Education_E-learning.html">Education & E-Learning</E-Learning></a></li>
+                          <li><a   class="text-dark"  href="Logistics and Transportation.html">Logistics and Transportion</a></li>
+                          <li><a   class="text-dark"  href="Retails _E-commerce.html">Retails & E-Learning</a></li>
+                          <li><a   class="text-dark"  href="Business .html">Business & Finance</a></li>
+                          <li><a  class="text-dark"   href="Media_Entertainment.html">Media & Entertainment</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a  class="text-dark"   href="#"style="font-size: large;padding:20px">Approaches</a>
+                        <ul class="dropdown-menu"style="font-size:large;padding:20px">
+                          <li><a  class="text-dark"   href="approach-delivery.html">Delivery Model</a></li>
+                          <li><a  class="text-dark"   href="approach-development.html">Development Mrthodology</a></li>
+                          <li><a  class="text-dark"   href="approach-engagement.html">Engagement Models</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="hire.html"style="font-size: large;">Hire developers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="blog.html"style="font-size: large;">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="teach-we.html"style="font-size: large;">Tech we Love</a>
+                  </li>
+                  <li>
+                    <a href="let.html" class="btn  ml-3 " style="color:black; border: 1px solid gray;  ">Let's Talk</a>
+                  
+                  </li>
+                    
+                </ul>
+              </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>We craft your innovative thought in the digital world</p>
+        </div>
+    </div>
+</div>
+       <!--second container-->
+    <div class="container-fluid background-banner">
+        <div class="row">
+            <div class="col-md-12 mt-5 " >
+                <h3 class=" ml-5 " style="margin-top: 0px;">How to Create a Long-Lasting Brand</h3>
+                <h6 class="ml-5">Nov 08, 2021</h6>
+               
+                    <a href="#" class="btn btn-primary ml-5 mt-3" style="background-color: black; border: transparent; margin-top: 20px; height: 42px; width:100px;">Let's Talk</a>
+                 <h1 class=" ml-5  mt-5" style="margin-top: 0px;">Ideating + Creating + Shipping</h1>
+            </div>
+            <!-- <div class="col-md-6 mb-5">
+                <img class="text-center mt-4 ml-5"  src="./img/we are hiring.jpg"height="200px" width="300px">
+            </div> -->
+            
+        </div>
+    </div>
+
+
+<div class="container mt-5">
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h5>What is a brand?</h5>
+            <p> <a href="#" style="color: black;">Wikipedia</a> defines a brand as “a name, term, design, symbol or any other feature that identifies one seller’s goods or service as distinct from those of other sellers”.</p>
+
+             <p>Jeff Bezos, the founder of Amazon puts it this way: “Your brand is what other people say about you when you’re not in the room.”</p>
+                
+             <p>Simply put, your brand is your reputation. It represents who you are and what your company is.</p>
+
+
+             <h5>Why is branding so important?</h5>
+             <p>According to a Nielson survey, 59% of consumers prefer to buy new products from brands familiar to them. A well-known brand is one of a company’s most valuable assets.</p>
+             <p>Pepsi, Coca-Cola, McDonald’s, Nike, and Apple are globally recognized brands. The mere mention of their names conjures up images of their products and logos in our minds. The reason why these brands are so popular is because of their effective branding strategies. These companies invest millions of dollars in promoting their brand. </p>
+             <p>You could say “these are big brands, but what about small businesses with limited budgets?</p>
+             <p>A small business may be competing against big brands with large audience reach and unlimited marketing budgets. However, it is possible to establish their brand identity and increase recognition with a strong brand-building process. Branding should be a priority for small business owners. According to the U.S. Bureau of Labor Statistics, half of all small businesses fail within five years of their inception. For a small business to succeed, owners should incorporate strategies to make their brand sustainable. Building a positive brand image is essential in order to compete with larger brands on the market. This ensures the company’s survival in a corporate-dominated business sector. </p>
+             
+             <img src="./img/Building.jpg" width="900px">
+            
+             <h5 class="mt-5">1. Define the purpose of your brand</h5>
+             <p>Determine why your business was founded in the first place. One way is to create a mission statement that expresses the brand’s purpose clearly. A well-written mission statement will also ensure that your strategies, products, and brand activities are all in sync.</p>
+             <p>When defining a brand purpose, you should ask yourself these four questions:</p>
+             <p>Why do you exist?</p>
+             <p>What differentiates you from other brands?</p>
+             <p>What problem do you solve?</p>
+             <p>Why should people care?</p>
+
+             <h5 class="mt-5">2. Know your competitors well</h5>
+             <p>You should focus on making your brand stand out against competitors. The goal is to convince a customer to purchase from you over them! To do so, you should be aware of what they excel at (or where they fail). One of the most important aspects of defining your brand’s positioning is competitor research (or market research). </p>
+             <p>Conduct extensive competitor research to identify areas that you can exploit.</p>
+             <p>Create a distinct positioning for your brand in order to attract and resonate with your target audience.</p>
+             <p>To ensure customer delight, provide a top-notch customer experience. Leverage influencers to facilitate positive word-of-mouth. </p>
+             <p>Employ social listening and monitoring for gathering customer feedback.</p>
+             <h5 class="mt-5">3. Know your target audience</h5>
+             <p>It should come as no surprise that every marketing effort begins with determining the target audience. This is due to the fact that your brand cannot be everything to everyone, so it is critical to consider who you intend to target. Understand the market’s demographics and cater to the expectations and needs of those customers. </p><br>
+             <p>For instance<br>
+
+                If you’re marketing daycare services, instead of targeting “all the mothers,” you could target “single mothers who work full-time.”<br>
+                
+                If you’re marketing iPhones for teen boys and girls, you can use “iPhones for college students.<br>
+                
+                If you want to sell a digital marketing course, you can use “digital marketing course for marketing graduates” etc<br>
+                <br>
+                 
+                
+                Understanding the buyer persona is a crucial stage in the brand-building process. You need to consider factors like 
+                <br>
+                Age<br>
+                Gender<br>
+                Location<br>
+                Income<br>
+                Education Level</p>
+             <h5 class="mt-5">4. Have a unique logo and tagline</h5>
+             <p>Part of the reason why brands such as Nike, Facebook, and Mcdonalds are truly memorable and timeless is because of their Iconic logos and taglines, which are instantly recognizable and relatively simple.  Your logo serves as a public representation of your company. This logo will appear on everything related to your company. <br><br>
+
+                Also, phrases like “I’m Lovin’ It”, “It’s quick and easy’ ‘ instantly conjure up images of well-known brands. So be willing to invest the time and money to create a unique logo and tagline that is catchy, in order to convey your own distinct identity. Hire a professional designer with logo designing experience. </p>
+             <h5 class="mt-5">5. Leverage Digital Marketing</h5>
+             <p>Digital marketing has become an essential component of business marketing. Due to its ability to reach a global market, digital marketing is the “must-have” strategy for branding in today’s digital world. <br><br>
+
+                Digital marketing can be fruitful for marketing ROI because your potential customers are online anytime, thanks to easy access to the internet through smartphones and tablets. Social media platforms like Facebook, Twitter, youtube allow you to reach a wider target audience. Through these platforms, you can engage with your customers more effectively. </p>
+             <h5 class="mt-5">6. Digitalize your business</h5>
+             <p>In this technology-driven market, the demand for digital transformation has skyrocketed. Digital transformation is incorporating modern technology into your business operations to increase efficiency, enhance customer experience, and boost sales. <br><br>
+
+                You can do this by developing a website or an app for your business, converting a brick-and-mortar store into an ecommerce store, incorporating mobile payment options, and more. More than 85% of the world’s senior business leaders now place a high priority on business digitalization. With the help of digital business transformation, You can provide your customers with personalized experiences, which will lead to improved brand loyalty, customer retention, and an increase in revenue.</p>
+             <h5>The bottom line</h5>
+             <p>A brand becomes unforgettable when you create a brand experience that stands the test of time. It is critical to remember that you cannot create a long-lasting brand experience for your target audience overnight. Every aspect of one’s identity should be formed and established with intention and purpose in mind. <br><br>
+
+                If you want to create an impactful brand experience for long-term success, you need to make sure you consistently apply the steps mentioned above and look for ways to build deeper connections with the audience to establish a long-lasting identity. Be patient, as everything takes time.
+                
+                 </p>
+
+
+        </div>
+    </div>
+</div>    
+
+
+
+ <!--footer part-->
+ <div class="container-fluid mt-5 " style="background-color: rgb(5, 2, 18);">
+    <div class="row">
+        <div class="col-md-6  mt-4 text-white">
+            <img src="https://www.zeksta.com/zeksta-dark.svg"style="height:70px;background-color:white;"> <br>
+            <p class="mt-4">From brainstorming brilliant ideas to flawless launches, Zeksta Technology seamlessly handles your website and app development, empowering you to conquer the digital world.</p>
+            <br>
+            <h6>Follow us on :</h6>
+            <div class="col-md-5 mt-5">
+                
+                <p>
+                <i class="fab fa-facebook-f icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-twitter icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-youtube icon" style="font-size: 30px;">&nbsp;&nbsp;</i>
+                <i class="fab fa-instagram icon"style="font-size: 30px;"></i>
+            
+                </p>
+            </div>
+
+        </div>
+        <div class="col-md-6 mt-4">    
+            <div class="row">
+                <div class="col-md-2.5">
+                    <a href="#" style="color: white;">Who we are &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">What we do &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Hire developers &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Tech we Love &nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+                <div class="col-md-2.5">
+                    <a href="#" style="color:white;">Contact us&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                </div>
+        </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Skype ID </h6>
+                    <p>Live:zekstatech</p>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Email Us </h6>
+                    <p>solution@zeksta.com</p>
+                </div>
+                <div class="col-md-3 text-white">
+                    <h6 style="color:white;">Call Us </h6>
+                    <p>+1(214)4734395  +919620390226</p>
+                </div>
+            </div>
+            <h4 class="text-white">Location</h4><br>
+            <div class="row">
+                <div class="col-md-5 text-white">
+                    <h6 style="color:white;">INDIA </h6>
+                    <p>Zeksta Technology Pvt. Ltd. 982, 4th Floor, Marvi Arcade, BTM 4th Stage, Vijaya Bank Layout, Bengaluru, Karnataka-560076</p>
+                </div>
+                <div class="col-md-5 text-white">
+                    <h6 style="color:white;">USA </h6>
+                <p>Zeksta Technology Pvt Ltd 539 W. Commerce St #3504 Dallas, TX 75208</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid" style="background-color: black;">
+    <div class="row">
+        <div class="col-md-9 text-white ">
+            <p>2017 - 2024 © All rights reserved.Zeksta Technology Pvt. Ltd.</p>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-6 text-white text-center"">
+                   <p>Sitemap &nbsp;|</p> 
+                </div>
+                <div class="col-md-6 text-white text-center""> 
+                  <p> Privacy Policy</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>            
